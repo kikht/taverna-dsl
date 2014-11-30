@@ -1,0 +1,72 @@
+_digit : '0' - '9' ;
+_letter : 'a' - 'z' | 'A' - 'Z' ;
+_idchar : _letter | _digit | '_' ;
+_pathchar : _letter | _digit | '_' | '-' | '.' | '/' ;
+
+pos_int : '1' - '9' {_digit} ;
+id : (_letter | '_') {_idchar} ;
+str_lit : '"' {.} '"' ;
+path : {_pathchar} ;
+
+!whitespace : ' ' | '\t' | '\n' | '\r' ;
+
+Processor : empty
+          | NameStmt
+          | TypeStmt
+          | SanitInputStmt
+          | ParallelStmt 
+          | InterpreterStmt
+          | SchedulerStmt
+          | ScriptStmt
+          | OutputStmt
+          | IntputStmt
+          | WaitStmt
+;
+
+NameStmt : "name" ":" id ; 
+TypeStmt : "type" ":" id ;
+SanitInputStmt : "sanitized" ":" BoolVal ;
+ParallelStmt : "parallel" ":" IntVal ;
+InterpreterStmt : "interpreter" ":" str_lit ;
+SchedulerStmt : "scheduler" ":" id ;
+ScriptStmt : "script" ":" ScriptVal ;
+
+OutputStmt : "outputs" ":" OutputList ; 
+OutputList : PortDef
+           | OutputList "," PortDef
+;
+
+WaitStmt : "wait" ":" WaitList ;
+WaitList : id
+         | WaitList "," id 
+;
+
+IntputStmt : "inputs" ":" IterOper ;
+IterOper : IterOperCross
+         | IterOperDot
+         | IterOperPrefix
+         | IterPort
+;
+IterOperCross : IterNode "*" IterNode
+              | IterOperCross "*" IterNode
+;
+IterOperDot : IterNode "," IterNode
+            | IterOperDot "," IterNode
+;
+IterOperPrefix : IterNode "<" IterNode ;
+IterNode : IterPort
+         | "(" IterOper ")"
+;
+IterPort : PortDef "=" SourceDef ;
+SourceDef : id 
+          | id ":" id 
+;
+PortDef : id
+        | id TypeDef
+;
+TypeDef : id
+        | id "(" IntVal ")"
+;
+ScriptVal : str_lit | id | path ; 
+BoolVal : "true" | "false" | "t" | "f" | "0" | "1" ;
+IntVal  : pos_int | "0" | "1" ;
