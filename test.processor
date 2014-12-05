@@ -1,0 +1,19 @@
+name: test
+type: bash
+sanitized: false
+parallel: 100
+interpreter: "/bin/bash"
+scheduler: default
+script: test.sh
+inputs: 
+    config map = config 
+    * ( sat_id = Generate_dates 
+        < (
+            mod1kmds file(0) = MOD1KMDS:mod1kmds,
+            mod03 file(1) = MOD03:mod03_last
+        ) 
+    )
+outputs: 
+    mod03 file, 
+    mod09_metadata
+wait: MOD1KMDS

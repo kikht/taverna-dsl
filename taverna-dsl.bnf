@@ -10,63 +10,78 @@ path : {_pathchar} ;
 
 !whitespace : ' ' | '\t' | '\n' | '\r' ;
 
-Processor : empty
-          | NameStmt
-          | TypeStmt
-          | SanitInputStmt
-          | ParallelStmt 
-          | InterpreterStmt
-          | SchedulerStmt
-          | ScriptStmt
-          | OutputStmt
-          | IntputStmt
-          | WaitStmt
+<<import ( "gitlab.ict.sbras.ru/taverna/taverna-dsl/ast" )>>
+
+Processor : empty                     
+          | Processor NameStmt        << ast.SetName($0, $1) >>
+          | Processor TypeStmt        << ast.SetType($0, $1) >>
+          | Processor SanitInputStmt  << ast.SetSanitize($0, $1) >>
+          | Processor ParallelStmt    << ast.SetParallel($0, $1) >>
+          | Processor InterpreterStmt << ast.SetInterpreter($0, $1) >>
+          | Processor SchedulerStmt   << ast.SetScheduler($0, $1) >>
+          | Processor ScriptStmt      << ast.SetScript($0, $1) >>
+          | Processor OutputStmt      << ast.SetOutputs($0, $1) >>
+          | Processor IntputStmt      << ast.SetInputs($0, $1) >>
+          | Processor WaitStmt        << ast.SetWaitList($0, $1) >>
 ;
 
-NameStmt : "name" ":" id ; 
-TypeStmt : "type" ":" id ;
-SanitInputStmt : "sanitized" ":" BoolVal ;
-ParallelStmt : "parallel" ":" IntVal ;
-InterpreterStmt : "interpreter" ":" str_lit ;
-SchedulerStmt : "scheduler" ":" id ;
-ScriptStmt : "script" ":" ScriptVal ;
+NameStmt : "name" ":" IdVal                   << $2, nil >>; 
+TypeStmt : "type" ":" IdVal                   << $2, nil >>;
+SanitInputStmt : "sanitized" ":" BoolVal      << $2, nil >>;
+ParallelStmt : "parallel" ":" IntVal          << $2, nil >>;
+InterpreterStmt : "interpreter" ":" ScriptVal << $2, nil >>;
+SchedulerStmt : "scheduler" ":" IdVal         << $2, nil >>;
+ScriptStmt : "script" ":" ScriptVal           << $2, nil >>;
 
-OutputStmt : "outputs" ":" OutputList ; 
-OutputList : PortDef
-           | OutputList "," PortDef
+OutputStmt : "outputs" ":" OutputList << $2, nil >> ;
+OutputList : PortDef                << []ast.PortDef{ $0.(ast.PortDef) }, nil >>
+           | OutputList "," PortDef << append($0.([]ast.PortDef), $2.(ast.PortDef)), nil >>
 ;
 
-WaitStmt : "wait" ":" WaitList ;
-WaitList : id
-         | WaitList "," id 
+WaitStmt : "wait" ":" WaitList << $2, nil >> ;
+WaitList : IdVal               << []string{ $0.(string) }, nil >>
+         | WaitList "," IdVal  << append($0.([]string), $2.(string)), nil >>
 ;
 
-IntputStmt : "inputs" ":" IterOper ;
+IntputStmt : "inputs" ":" IterOper << $2, nil >> ;
 IterOper : IterOperCross
          | IterOperDot
          | IterOperPrefix
-         | IterPort
+         | IterPort << ast.NewIterNode(ast.Cross, $0) >>
 ;
-IterOperCross : IterNode "*" IterNode
-              | IterOperCross "*" IterNode
+IterOperCross : IterNode "*" IterNode      << ast.NewIterNode(ast.Cross, $0, $2) >>
+              | IterOperCross "*" IterNode << $0.(*ast.IterNode).Append($2) >>
 ;
-IterOperDot : IterNode "," IterNode
-            | IterOperDot "," IterNode
+IterOperDot : IterNode "," IterNode    << ast.NewIterNode(ast.Dot, $0, $2) >>
+            | IterOperDot "," IterNode << $0.(*ast.IterNode).Append($2) >>
 ;
-IterOperPrefix : IterNode "<" IterNode ;
+IterOperPrefix : IterNode "<" IterNode << ast.NewIterNode(ast.Prefix, $0, $2) >> ;
 IterNode : IterPort
-         | "(" IterOper ")"
+         | "(" IterOper ")" << $1, nil >>
 ;
-IterPort : PortDef "=" SourceDef ;
-SourceDef : id 
-          | id ":" id 
+IterPort : PortDef "=" SourceDef << ast.NewIterPort($0, $2) >> ;
+
+SourceDef : IdVal           << ast.NewSourceDef($0, "") >>
+          | IdVal ":" IdVal << ast.NewSourceDef($0, $2) >>
 ;
-PortDef : id
-        | id TypeDef
+PortDef : IdVal         << ast.NewPortDef($0, nil) >>
+        | IdVal TypeDef << ast.NewPortDef($0, $1) >>
 ;
-TypeDef : id
-        | id "(" IntVal ")"
+TypeDef : IdVal                << ast.NewTypeDef($0, 0) >>
+        | IdVal "(" IntVal ")" << ast.NewTypeDef($0, $2) >>
 ;
-ScriptVal : str_lit | id | path ; 
-BoolVal : "true" | "false" | "t" | "f" | "0" | "1" ;
-IntVal  : pos_int | "0" | "1" ;
+IdVal     : id                    << ast.StrVal($0) >> ; 
+ScriptVal : str_lit               << ast.StrLitVal($0) >> 
+          | id                    << ast.StrVal($0) >> 
+          | path                  << ast.StrVal($0) >> ;  
+BoolVal   : "true"                << true,  nil >> 
+          | "false"               << false, nil >>
+          | "t"                   << true,  nil >>
+          | "f"                   << false, nil >>
+          | "0"                   << false, nil >>
+          | "1"                   << true,  nil >>
+;
+IntVal    : pos_int               << ast.IntVal($0) >>
+          | "0"                   << 0, nil >>
+          | "1"                   << 1, nil >>
+;
