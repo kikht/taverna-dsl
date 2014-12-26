@@ -9,6 +9,7 @@ import (
 	"io"
 	"log"
 	"os"
+	"sort"
 	"strings"
 )
 
@@ -21,6 +22,12 @@ func fixId(id string) string {
 	}
 	return id
 }
+
+type byFixedId []string
+
+func (a byFixedId) Len() int           { return len(a) }
+func (a byFixedId) Swap(i, j int)      { a[i], a[j] = a[j], a[i] }
+func (a byFixedId) Less(i, j int) bool { return fixId(a[i]) < fixId(a[j]) }
 
 func printOutputNode(out io.Writer, node *t2.IterationNode,
 	workflow *t2.Workflow, processor string, types map[string]ast.TypeDef,
@@ -39,7 +46,7 @@ func printOutputNode(out io.Writer, node *t2.IterationNode,
 		}
 
 		typeStr := typeDef.String()
-		fmt.Fprintf(out, "\n%s%s %s", strings.Repeat("\t", level), 
+		fmt.Fprintf(out, "\n%s%s %s", strings.Repeat("\t", level),
 			fixId(node.Name), typeStr)
 		if typeStr != "" {
 			fmt.Fprint(out, " ")
@@ -96,7 +103,7 @@ func printOutputNode(out io.Writer, node *t2.IterationNode,
 		case "prefix":
 			op = " <"
 			if len(node.Children) != 2 {
-				return errors.New("Invalid prefix node on " + processor + ":" + 
+				return errors.New("Invalid prefix node on " + processor + ":" +
 					node.Name)
 			}
 		default:
@@ -112,7 +119,7 @@ func printOutputNode(out io.Writer, node *t2.IterationNode,
 			if i != 0 {
 				fmt.Fprintf(out, "%s", op)
 			}
-			err := printOutputNode(out, &child, workflow, processor, types, 
+			err := printOutputNode(out, &child, workflow, processor, types,
 				level+1)
 			if err != nil {
 				return err
@@ -257,20 +264,31 @@ func writeProcessor(workflow *t2.Workflow, processor *t2.Processor) error {
 
 	if len(outputMap) > 0 {
 		fmt.Fprint(out, "outputs:\n")
+
+		names := make([]string, 0, len(outputMap))
+		for name := range outputMap {
+			names = append(names, name)
+		}
+		sort.Sort(byFixedId(names))
+
 		next := false
-		for name, desc := range outputMap {
+		for _, name := range names {
 			if next {
 				fmt.Fprint(out, ",\n")
 			} else {
 				next = true
 			}
 
-			fmt.Fprintf(out, "\t%s %v", fixId(name), desc)
+			fmt.Fprintf(out, "\t%s %v", fixId(name), outputMap[name])
 		}
 		fmt.Fprint(out, "\n")
 	}
 
 	if len(waitList) > 0 {
+		for i := range waitList {
+			waitList[i] = fixId(waitList[i])
+		}
+		sort.Strings(waitList)
 		fmt.Fprintf(out, "wait: %s\n", strings.Join(waitList, ", "))
 	}
 	return nil
