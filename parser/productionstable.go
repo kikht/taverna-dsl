@@ -460,10 +460,20 @@ var productionsTable = ProdTab {
 		},
 	},
 	ProdTabEntry{
+		String: `TypeDef : "(" IntVal ")"	<< ast.NewTypeDef("", X[1]) >>`,
+		Id: "TypeDef",
+		NTType: 22,
+		Index: 44,
+		NumSymbols: 3,
+		ReduceFunc: func(X []Attrib) (Attrib, error) {
+			return ast.NewTypeDef("", X[1])
+		},
+	},
+	ProdTabEntry{
 		String: `IdVal : id	<< ast.StrVal(X[0]) >>`,
 		Id: "IdVal",
 		NTType: 23,
-		Index: 44,
+		Index: 45,
 		NumSymbols: 1,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
 			return ast.StrVal(X[0])
@@ -473,7 +483,7 @@ var productionsTable = ProdTab {
 		String: `ScriptVal : str_lit	<< ast.StrLitVal(X[0]) >>`,
 		Id: "ScriptVal",
 		NTType: 24,
-		Index: 45,
+		Index: 46,
 		NumSymbols: 1,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
 			return ast.StrLitVal(X[0])
@@ -483,7 +493,7 @@ var productionsTable = ProdTab {
 		String: `ScriptVal : id	<< ast.StrVal(X[0]) >>`,
 		Id: "ScriptVal",
 		NTType: 24,
-		Index: 46,
+		Index: 47,
 		NumSymbols: 1,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
 			return ast.StrVal(X[0])
@@ -493,7 +503,7 @@ var productionsTable = ProdTab {
 		String: `ScriptVal : path	<< ast.StrVal(X[0]) >>`,
 		Id: "ScriptVal",
 		NTType: 24,
-		Index: 47,
+		Index: 48,
 		NumSymbols: 1,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
 			return ast.StrVal(X[0])
@@ -503,7 +513,7 @@ var productionsTable = ProdTab {
 		String: `BoolVal : "true"	<< true,  nil >>`,
 		Id: "BoolVal",
 		NTType: 25,
-		Index: 48,
+		Index: 49,
 		NumSymbols: 1,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
 			return true,  nil
@@ -513,7 +523,7 @@ var productionsTable = ProdTab {
 		String: `BoolVal : "false"	<< false, nil >>`,
 		Id: "BoolVal",
 		NTType: 25,
-		Index: 49,
+		Index: 50,
 		NumSymbols: 1,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
 			return false, nil
@@ -523,7 +533,7 @@ var productionsTable = ProdTab {
 		String: `BoolVal : "t"	<< true,  nil >>`,
 		Id: "BoolVal",
 		NTType: 25,
-		Index: 50,
+		Index: 51,
 		NumSymbols: 1,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
 			return true,  nil
@@ -533,7 +543,7 @@ var productionsTable = ProdTab {
 		String: `BoolVal : "f"	<< false, nil >>`,
 		Id: "BoolVal",
 		NTType: 25,
-		Index: 51,
+		Index: 52,
 		NumSymbols: 1,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
 			return false, nil
@@ -543,7 +553,7 @@ var productionsTable = ProdTab {
 		String: `BoolVal : "0"	<< false, nil >>`,
 		Id: "BoolVal",
 		NTType: 25,
-		Index: 52,
+		Index: 53,
 		NumSymbols: 1,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
 			return false, nil
@@ -553,7 +563,7 @@ var productionsTable = ProdTab {
 		String: `BoolVal : "1"	<< true,  nil >>`,
 		Id: "BoolVal",
 		NTType: 25,
-		Index: 53,
+		Index: 54,
 		NumSymbols: 1,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
 			return true,  nil
@@ -563,7 +573,7 @@ var productionsTable = ProdTab {
 		String: `IntVal : pos_int	<< ast.IntVal(X[0]) >>`,
 		Id: "IntVal",
 		NTType: 26,
-		Index: 54,
+		Index: 55,
 		NumSymbols: 1,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
 			return ast.IntVal(X[0])
@@ -573,7 +583,7 @@ var productionsTable = ProdTab {
 		String: `IntVal : "0"	<< 0, nil >>`,
 		Id: "IntVal",
 		NTType: 26,
-		Index: 55,
+		Index: 56,
 		NumSymbols: 1,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
 			return 0, nil
@@ -583,7 +593,7 @@ var productionsTable = ProdTab {
 		String: `IntVal : "1"	<< 1, nil >>`,
 		Id: "IntVal",
 		NTType: 26,
-		Index: 56,
+		Index: 57,
 		NumSymbols: 1,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
 			return 1, nil

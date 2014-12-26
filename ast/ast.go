@@ -1,12 +1,13 @@
 package ast
 
 import (
-	"gitlab.ict.sbras.ru/taverna/taverna-dsl/token"
 	"errors"
+	"gitlab.ict.sbras.ru/taverna/taverna-dsl/token"
 	"strconv"
 )
 
 type IterType int
+
 const (
 	Cross IterType = iota
 	Dot
@@ -16,15 +17,15 @@ const (
 
 type Processor struct {
 	Name, Type, Interpreter, Scheduler, Script string
-	Sanitized bool
-	Parallel int
-	WaitList []string
-	Outputs []PortDef
-	Inputs IterNode
+	Sanitized                                  bool
+	Parallel                                   int
+	WaitList                                   []string
+	Outputs                                    []PortDef
+	Inputs                                     IterNode
 }
 
 type TypeDef struct {
-	Type string
+	Type  string
 	Depth int
 }
 
@@ -38,10 +39,23 @@ type SourceDef struct {
 }
 
 type IterNode struct {
-	Type IterType
+	Type     IterType
 	Children []IterNode
-	Port PortDef
-	Source SourceDef
+	Port     PortDef
+	Source   SourceDef
+}
+
+func (p TypeDef) String() string {
+	switch {
+	case p.Type == "" && p.Depth == 0:
+		return ""
+	case p.Type == "":
+		return "(" + strconv.Itoa(p.Depth) + ")"
+	case p.Depth == 0:
+		return p.Type
+	default:
+		return p.Type + "(" + strconv.Itoa(p.Depth) + ")"
+	}
 }
 
 func StrVal(val interface{}) (string, error) {
@@ -50,7 +64,7 @@ func StrVal(val interface{}) (string, error) {
 
 func StrLitVal(val interface{}) (string, error) {
 	str := val.(*token.Token).Lit
-	return string(str[1:len(str)-1]), nil
+	return string(str[1 : len(str)-1]), nil
 }
 
 func IntVal(val interface{}) (int, error) {
@@ -76,9 +90,9 @@ func NewSourceDef(processor, port interface{}) (SourceDef, error) {
 }
 
 func NewIterPort(port, source interface{}) (*IterNode, error) {
-	return &IterNode {
-		Type: Port,
-		Port: port.(PortDef),
+	return &IterNode{
+		Type:   Port,
+		Port:   port.(PortDef),
 		Source: source.(SourceDef)}, nil
 }
 
@@ -87,8 +101,8 @@ func NewIterNode(nodeType IterType, args ...interface{}) (*IterNode, error) {
 		return nil, errors.New("Can't create PortNode, use NewIterPort")
 	}
 
-	res := &IterNode {
-		Type: nodeType, 
+	res := &IterNode{
+		Type:     nodeType,
 		Children: make([]IterNode, 0)}
 
 	for _, item := range args {

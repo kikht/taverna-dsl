@@ -1,0 +1,16 @@
+name: Find_paths
+parallel: 5
+type: bash
+scheduler: direct
+script: Find_paths.sh
+inputs: (
+		config map = Config_parser *
+		src_dir = Satellites:src_root * (
+			month = Generate_dates:month_str,
+			day = Generate_dates:day_padded,
+			year = Generate_dates
+		)
+	),
+	log_dir log_path = Sat_day_dir:day_log_dir
+outputs:
+	path (1)

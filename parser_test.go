@@ -27,3 +27,21 @@ func TestParser(t *testing.T) {
 	t.Log(str)
 }
 
+func TestParser2(t *testing.T) {
+	p := parser.NewParser()
+	l, err := lexer.NewLexerFile("Find_paths.processor")
+	if err != nil {
+		t.Log(err.Error())
+		t.Fail()
+		return
+	}
+	res, err := p.Parse(l)
+	if err != nil {
+		t.Log(err.Error())
+		t.Fail()
+		return
+	}
+	processor := res.(*ast.Processor)
+	str := pretty.PrettyFormat(processor)
+	t.Log(str)
+}

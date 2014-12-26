@@ -1235,20 +1235,20 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			reduce(44),		/* $, reduce: IdVal */
+			reduce(45),		/* $, reduce: IdVal */
 			nil,		/* empty */
-			reduce(44),		/* name, reduce: IdVal */
+			reduce(45),		/* name, reduce: IdVal */
 			nil,		/* : */
-			reduce(44),		/* type, reduce: IdVal */
-			reduce(44),		/* sanitized, reduce: IdVal */
-			reduce(44),		/* parallel, reduce: IdVal */
-			reduce(44),		/* interpreter, reduce: IdVal */
-			reduce(44),		/* scheduler, reduce: IdVal */
-			reduce(44),		/* script, reduce: IdVal */
-			reduce(44),		/* outputs, reduce: IdVal */
+			reduce(45),		/* type, reduce: IdVal */
+			reduce(45),		/* sanitized, reduce: IdVal */
+			reduce(45),		/* parallel, reduce: IdVal */
+			reduce(45),		/* interpreter, reduce: IdVal */
+			reduce(45),		/* scheduler, reduce: IdVal */
+			reduce(45),		/* script, reduce: IdVal */
+			reduce(45),		/* outputs, reduce: IdVal */
 			nil,		/* , */
-			reduce(44),		/* wait, reduce: IdVal */
-			reduce(44),		/* inputs, reduce: IdVal */
+			reduce(45),		/* wait, reduce: IdVal */
+			reduce(45),		/* inputs, reduce: IdVal */
 			nil,		/* * */
 			nil,		/* < */
 			nil,		/* ( */
@@ -1346,43 +1346,6 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			reduce(48),		/* $, reduce: BoolVal */
-			nil,		/* empty */
-			reduce(48),		/* name, reduce: BoolVal */
-			nil,		/* : */
-			reduce(48),		/* type, reduce: BoolVal */
-			reduce(48),		/* sanitized, reduce: BoolVal */
-			reduce(48),		/* parallel, reduce: BoolVal */
-			reduce(48),		/* interpreter, reduce: BoolVal */
-			reduce(48),		/* scheduler, reduce: BoolVal */
-			reduce(48),		/* script, reduce: BoolVal */
-			reduce(48),		/* outputs, reduce: BoolVal */
-			nil,		/* , */
-			reduce(48),		/* wait, reduce: BoolVal */
-			reduce(48),		/* inputs, reduce: BoolVal */
-			nil,		/* * */
-			nil,		/* < */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* = */
-			nil,		/* id */
-			nil,		/* str_lit */
-			nil,		/* path */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* t */
-			nil,		/* f */
-			nil,		/* 0 */
-			nil,		/* 1 */
-			nil,		/* pos_int */
-			
-		},
-
-	},
-	actionRow{ // S37
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
 			reduce(49),		/* $, reduce: BoolVal */
 			nil,		/* empty */
 			reduce(49),		/* name, reduce: BoolVal */
@@ -1416,7 +1379,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S38
+	actionRow{ // S37
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -1453,7 +1416,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S39
+	actionRow{ // S38
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -1490,7 +1453,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S40
+	actionRow{ // S39
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -1527,7 +1490,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S41
+	actionRow{ // S40
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -1545,6 +1508,43 @@ var actionTab = actionTable{
 			nil,		/* , */
 			reduce(53),		/* wait, reduce: BoolVal */
 			reduce(53),		/* inputs, reduce: BoolVal */
+			nil,		/* * */
+			nil,		/* < */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* = */
+			nil,		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S41
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			reduce(54),		/* $, reduce: BoolVal */
+			nil,		/* empty */
+			reduce(54),		/* name, reduce: BoolVal */
+			nil,		/* : */
+			reduce(54),		/* type, reduce: BoolVal */
+			reduce(54),		/* sanitized, reduce: BoolVal */
+			reduce(54),		/* parallel, reduce: BoolVal */
+			reduce(54),		/* interpreter, reduce: BoolVal */
+			reduce(54),		/* scheduler, reduce: BoolVal */
+			reduce(54),		/* script, reduce: BoolVal */
+			reduce(54),		/* outputs, reduce: BoolVal */
+			nil,		/* , */
+			reduce(54),		/* wait, reduce: BoolVal */
+			reduce(54),		/* inputs, reduce: BoolVal */
 			nil,		/* * */
 			nil,		/* < */
 			nil,		/* ( */
@@ -1605,43 +1605,6 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			reduce(55),		/* $, reduce: IntVal */
-			nil,		/* empty */
-			reduce(55),		/* name, reduce: IntVal */
-			nil,		/* : */
-			reduce(55),		/* type, reduce: IntVal */
-			reduce(55),		/* sanitized, reduce: IntVal */
-			reduce(55),		/* parallel, reduce: IntVal */
-			reduce(55),		/* interpreter, reduce: IntVal */
-			reduce(55),		/* scheduler, reduce: IntVal */
-			reduce(55),		/* script, reduce: IntVal */
-			reduce(55),		/* outputs, reduce: IntVal */
-			nil,		/* , */
-			reduce(55),		/* wait, reduce: IntVal */
-			reduce(55),		/* inputs, reduce: IntVal */
-			nil,		/* * */
-			nil,		/* < */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* = */
-			nil,		/* id */
-			nil,		/* str_lit */
-			nil,		/* path */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* t */
-			nil,		/* f */
-			nil,		/* 0 */
-			nil,		/* 1 */
-			nil,		/* pos_int */
-			
-		},
-
-	},
-	actionRow{ // S44
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
 			reduce(56),		/* $, reduce: IntVal */
 			nil,		/* empty */
 			reduce(56),		/* name, reduce: IntVal */
@@ -1675,24 +1638,61 @@ var actionTab = actionTable{
 		},
 
 	},
+	actionRow{ // S44
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			reduce(57),		/* $, reduce: IntVal */
+			nil,		/* empty */
+			reduce(57),		/* name, reduce: IntVal */
+			nil,		/* : */
+			reduce(57),		/* type, reduce: IntVal */
+			reduce(57),		/* sanitized, reduce: IntVal */
+			reduce(57),		/* parallel, reduce: IntVal */
+			reduce(57),		/* interpreter, reduce: IntVal */
+			reduce(57),		/* scheduler, reduce: IntVal */
+			reduce(57),		/* script, reduce: IntVal */
+			reduce(57),		/* outputs, reduce: IntVal */
+			nil,		/* , */
+			reduce(57),		/* wait, reduce: IntVal */
+			reduce(57),		/* inputs, reduce: IntVal */
+			nil,		/* * */
+			nil,		/* < */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* = */
+			nil,		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
 	actionRow{ // S45
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			reduce(54),		/* $, reduce: IntVal */
+			reduce(55),		/* $, reduce: IntVal */
 			nil,		/* empty */
-			reduce(54),		/* name, reduce: IntVal */
+			reduce(55),		/* name, reduce: IntVal */
 			nil,		/* : */
-			reduce(54),		/* type, reduce: IntVal */
-			reduce(54),		/* sanitized, reduce: IntVal */
-			reduce(54),		/* parallel, reduce: IntVal */
-			reduce(54),		/* interpreter, reduce: IntVal */
-			reduce(54),		/* scheduler, reduce: IntVal */
-			reduce(54),		/* script, reduce: IntVal */
-			reduce(54),		/* outputs, reduce: IntVal */
+			reduce(55),		/* type, reduce: IntVal */
+			reduce(55),		/* sanitized, reduce: IntVal */
+			reduce(55),		/* parallel, reduce: IntVal */
+			reduce(55),		/* interpreter, reduce: IntVal */
+			reduce(55),		/* scheduler, reduce: IntVal */
+			reduce(55),		/* script, reduce: IntVal */
+			reduce(55),		/* outputs, reduce: IntVal */
 			nil,		/* , */
-			reduce(54),		/* wait, reduce: IntVal */
-			reduce(54),		/* inputs, reduce: IntVal */
+			reduce(55),		/* wait, reduce: IntVal */
+			reduce(55),		/* inputs, reduce: IntVal */
 			nil,		/* * */
 			nil,		/* < */
 			nil,		/* ( */
@@ -1753,6 +1753,43 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
+			reduce(47),		/* $, reduce: ScriptVal */
+			nil,		/* empty */
+			reduce(47),		/* name, reduce: ScriptVal */
+			nil,		/* : */
+			reduce(47),		/* type, reduce: ScriptVal */
+			reduce(47),		/* sanitized, reduce: ScriptVal */
+			reduce(47),		/* parallel, reduce: ScriptVal */
+			reduce(47),		/* interpreter, reduce: ScriptVal */
+			reduce(47),		/* scheduler, reduce: ScriptVal */
+			reduce(47),		/* script, reduce: ScriptVal */
+			reduce(47),		/* outputs, reduce: ScriptVal */
+			nil,		/* , */
+			reduce(47),		/* wait, reduce: ScriptVal */
+			reduce(47),		/* inputs, reduce: ScriptVal */
+			nil,		/* * */
+			nil,		/* < */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* = */
+			nil,		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S48
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
 			reduce(46),		/* $, reduce: ScriptVal */
 			nil,		/* empty */
 			reduce(46),		/* name, reduce: ScriptVal */
@@ -1786,61 +1823,24 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S48
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			reduce(45),		/* $, reduce: ScriptVal */
-			nil,		/* empty */
-			reduce(45),		/* name, reduce: ScriptVal */
-			nil,		/* : */
-			reduce(45),		/* type, reduce: ScriptVal */
-			reduce(45),		/* sanitized, reduce: ScriptVal */
-			reduce(45),		/* parallel, reduce: ScriptVal */
-			reduce(45),		/* interpreter, reduce: ScriptVal */
-			reduce(45),		/* scheduler, reduce: ScriptVal */
-			reduce(45),		/* script, reduce: ScriptVal */
-			reduce(45),		/* outputs, reduce: ScriptVal */
-			nil,		/* , */
-			reduce(45),		/* wait, reduce: ScriptVal */
-			reduce(45),		/* inputs, reduce: ScriptVal */
-			nil,		/* * */
-			nil,		/* < */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* = */
-			nil,		/* id */
-			nil,		/* str_lit */
-			nil,		/* path */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* t */
-			nil,		/* f */
-			nil,		/* 0 */
-			nil,		/* 1 */
-			nil,		/* pos_int */
-			
-		},
-
-	},
 	actionRow{ // S49
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			reduce(47),		/* $, reduce: ScriptVal */
+			reduce(48),		/* $, reduce: ScriptVal */
 			nil,		/* empty */
-			reduce(47),		/* name, reduce: ScriptVal */
+			reduce(48),		/* name, reduce: ScriptVal */
 			nil,		/* : */
-			reduce(47),		/* type, reduce: ScriptVal */
-			reduce(47),		/* sanitized, reduce: ScriptVal */
-			reduce(47),		/* parallel, reduce: ScriptVal */
-			reduce(47),		/* interpreter, reduce: ScriptVal */
-			reduce(47),		/* scheduler, reduce: ScriptVal */
-			reduce(47),		/* script, reduce: ScriptVal */
-			reduce(47),		/* outputs, reduce: ScriptVal */
+			reduce(48),		/* type, reduce: ScriptVal */
+			reduce(48),		/* sanitized, reduce: ScriptVal */
+			reduce(48),		/* parallel, reduce: ScriptVal */
+			reduce(48),		/* interpreter, reduce: ScriptVal */
+			reduce(48),		/* scheduler, reduce: ScriptVal */
+			reduce(48),		/* script, reduce: ScriptVal */
+			reduce(48),		/* outputs, reduce: ScriptVal */
 			nil,		/* , */
-			reduce(47),		/* wait, reduce: ScriptVal */
-			reduce(47),		/* inputs, reduce: ScriptVal */
+			reduce(48),		/* wait, reduce: ScriptVal */
+			reduce(48),		/* inputs, reduce: ScriptVal */
 			nil,		/* * */
 			nil,		/* < */
 			nil,		/* ( */
@@ -1954,10 +1954,10 @@ var actionTab = actionTable{
 			reduce(40),		/* inputs, reduce: PortDef */
 			nil,		/* * */
 			nil,		/* < */
-			nil,		/* ( */
+			shift(70),		/* ( */
 			nil,		/* ) */
 			nil,		/* = */
-			shift(71),		/* id */
+			shift(72),		/* id */
 			nil,		/* str_lit */
 			nil,		/* path */
 			nil,		/* true */
@@ -1986,7 +1986,7 @@ var actionTab = actionTable{
 			reduce(19),		/* scheduler, reduce: OutputStmt */
 			reduce(19),		/* script, reduce: OutputStmt */
 			reduce(19),		/* outputs, reduce: OutputStmt */
-			shift(72),		/* , */
+			shift(73),		/* , */
 			reduce(19),		/* wait, reduce: OutputStmt */
 			reduce(19),		/* inputs, reduce: OutputStmt */
 			nil,		/* * */
@@ -2049,26 +2049,26 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			reduce(44),		/* $, reduce: IdVal */
+			reduce(45),		/* $, reduce: IdVal */
 			nil,		/* empty */
-			reduce(44),		/* name, reduce: IdVal */
+			reduce(45),		/* name, reduce: IdVal */
 			nil,		/* : */
-			reduce(44),		/* type, reduce: IdVal */
-			reduce(44),		/* sanitized, reduce: IdVal */
-			reduce(44),		/* parallel, reduce: IdVal */
-			reduce(44),		/* interpreter, reduce: IdVal */
-			reduce(44),		/* scheduler, reduce: IdVal */
-			reduce(44),		/* script, reduce: IdVal */
-			reduce(44),		/* outputs, reduce: IdVal */
-			reduce(44),		/* ,, reduce: IdVal */
-			reduce(44),		/* wait, reduce: IdVal */
-			reduce(44),		/* inputs, reduce: IdVal */
+			reduce(45),		/* type, reduce: IdVal */
+			reduce(45),		/* sanitized, reduce: IdVal */
+			reduce(45),		/* parallel, reduce: IdVal */
+			reduce(45),		/* interpreter, reduce: IdVal */
+			reduce(45),		/* scheduler, reduce: IdVal */
+			reduce(45),		/* script, reduce: IdVal */
+			reduce(45),		/* outputs, reduce: IdVal */
+			reduce(45),		/* ,, reduce: IdVal */
+			reduce(45),		/* wait, reduce: IdVal */
+			reduce(45),		/* inputs, reduce: IdVal */
 			nil,		/* * */
 			nil,		/* < */
-			nil,		/* ( */
+			reduce(45),		/* (, reduce: IdVal */
 			nil,		/* ) */
 			nil,		/* = */
-			reduce(44),		/* id, reduce: IdVal */
+			reduce(45),		/* id, reduce: IdVal */
 			nil,		/* str_lit */
 			nil,		/* path */
 			nil,		/* true */
@@ -2134,7 +2134,7 @@ var actionTab = actionTable{
 			reduce(22),		/* scheduler, reduce: WaitStmt */
 			reduce(22),		/* script, reduce: WaitStmt */
 			reduce(22),		/* outputs, reduce: WaitStmt */
-			shift(73),		/* , */
+			shift(74),		/* , */
 			reduce(22),		/* wait, reduce: WaitStmt */
 			reduce(22),		/* inputs, reduce: WaitStmt */
 			nil,		/* * */
@@ -2160,20 +2160,20 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			reduce(44),		/* $, reduce: IdVal */
+			reduce(45),		/* $, reduce: IdVal */
 			nil,		/* empty */
-			reduce(44),		/* name, reduce: IdVal */
+			reduce(45),		/* name, reduce: IdVal */
 			nil,		/* : */
-			reduce(44),		/* type, reduce: IdVal */
-			reduce(44),		/* sanitized, reduce: IdVal */
-			reduce(44),		/* parallel, reduce: IdVal */
-			reduce(44),		/* interpreter, reduce: IdVal */
-			reduce(44),		/* scheduler, reduce: IdVal */
-			reduce(44),		/* script, reduce: IdVal */
-			reduce(44),		/* outputs, reduce: IdVal */
-			reduce(44),		/* ,, reduce: IdVal */
-			reduce(44),		/* wait, reduce: IdVal */
-			reduce(44),		/* inputs, reduce: IdVal */
+			reduce(45),		/* type, reduce: IdVal */
+			reduce(45),		/* sanitized, reduce: IdVal */
+			reduce(45),		/* parallel, reduce: IdVal */
+			reduce(45),		/* interpreter, reduce: IdVal */
+			reduce(45),		/* scheduler, reduce: IdVal */
+			reduce(45),		/* script, reduce: IdVal */
+			reduce(45),		/* outputs, reduce: IdVal */
+			reduce(45),		/* ,, reduce: IdVal */
+			reduce(45),		/* wait, reduce: IdVal */
+			reduce(45),		/* inputs, reduce: IdVal */
 			nil,		/* * */
 			nil,		/* < */
 			nil,		/* ( */
@@ -2213,10 +2213,10 @@ var actionTab = actionTable{
 			nil,		/* inputs */
 			nil,		/* * */
 			nil,		/* < */
-			nil,		/* ( */
+			shift(76),		/* ( */
 			nil,		/* ) */
 			reduce(40),		/* =, reduce: PortDef */
-			shift(76),		/* id */
+			shift(78),		/* id */
 			nil,		/* str_lit */
 			nil,		/* path */
 			nil,		/* true */
@@ -2252,7 +2252,7 @@ var actionTab = actionTable{
 			nil,		/* < */
 			nil,		/* ( */
 			nil,		/* ) */
-			shift(77),		/* = */
+			shift(79),		/* = */
 			nil,		/* id */
 			nil,		/* str_lit */
 			nil,		/* path */
@@ -2322,7 +2322,7 @@ var actionTab = actionTable{
 			nil,		/* , */
 			reduce(26),		/* wait, reduce: IterOper */
 			reduce(26),		/* inputs, reduce: IterOper */
-			shift(78),		/* * */
+			shift(80),		/* * */
 			nil,		/* < */
 			nil,		/* ( */
 			nil,		/* ) */
@@ -2356,7 +2356,7 @@ var actionTab = actionTable{
 			reduce(27),		/* scheduler, reduce: IterOper */
 			reduce(27),		/* script, reduce: IterOper */
 			reduce(27),		/* outputs, reduce: IterOper */
-			shift(79),		/* , */
+			shift(81),		/* , */
 			reduce(27),		/* wait, reduce: IterOper */
 			reduce(27),		/* inputs, reduce: IterOper */
 			nil,		/* * */
@@ -2467,11 +2467,11 @@ var actionTab = actionTable{
 			nil,		/* scheduler */
 			nil,		/* script */
 			nil,		/* outputs */
-			shift(80),		/* , */
+			shift(82),		/* , */
 			nil,		/* wait */
 			nil,		/* inputs */
-			shift(81),		/* * */
-			shift(82),		/* < */
+			shift(83),		/* * */
+			shift(84),		/* < */
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* = */
@@ -2546,10 +2546,10 @@ var actionTab = actionTable{
 			nil,		/* inputs */
 			nil,		/* * */
 			nil,		/* < */
-			nil,		/* ( */
+			reduce(45),		/* (, reduce: IdVal */
 			nil,		/* ) */
-			reduce(44),		/* =, reduce: IdVal */
-			reduce(44),		/* id, reduce: IdVal */
+			reduce(45),		/* =, reduce: IdVal */
+			reduce(45),		/* id, reduce: IdVal */
 			nil,		/* str_lit */
 			nil,		/* path */
 			nil,		/* true */
@@ -2583,7 +2583,7 @@ var actionTab = actionTable{
 			reduce(42),		/* inputs, reduce: TypeDef */
 			nil,		/* * */
 			nil,		/* < */
-			shift(90),		/* ( */
+			shift(92),		/* ( */
 			nil,		/* ) */
 			nil,		/* = */
 			nil,		/* id */
@@ -2601,6 +2601,43 @@ var actionTab = actionTable{
 
 	},
 	actionRow{ // S70
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			nil,		/* , */
+			nil,		/* wait */
+			nil,		/* inputs */
+			nil,		/* * */
+			nil,		/* < */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* = */
+			nil,		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			shift(94),		/* 0 */
+			shift(95),		/* 1 */
+			shift(96),		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S71
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -2637,67 +2674,30 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S71
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			reduce(44),		/* $, reduce: IdVal */
-			nil,		/* empty */
-			reduce(44),		/* name, reduce: IdVal */
-			nil,		/* : */
-			reduce(44),		/* type, reduce: IdVal */
-			reduce(44),		/* sanitized, reduce: IdVal */
-			reduce(44),		/* parallel, reduce: IdVal */
-			reduce(44),		/* interpreter, reduce: IdVal */
-			reduce(44),		/* scheduler, reduce: IdVal */
-			reduce(44),		/* script, reduce: IdVal */
-			reduce(44),		/* outputs, reduce: IdVal */
-			reduce(44),		/* ,, reduce: IdVal */
-			reduce(44),		/* wait, reduce: IdVal */
-			reduce(44),		/* inputs, reduce: IdVal */
-			nil,		/* * */
-			nil,		/* < */
-			reduce(44),		/* (, reduce: IdVal */
-			nil,		/* ) */
-			nil,		/* = */
-			nil,		/* id */
-			nil,		/* str_lit */
-			nil,		/* path */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* t */
-			nil,		/* f */
-			nil,		/* 0 */
-			nil,		/* 1 */
-			nil,		/* pos_int */
-			
-		},
-
-	},
 	actionRow{ // S72
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			nil,		/* $ */
+			reduce(45),		/* $, reduce: IdVal */
 			nil,		/* empty */
-			nil,		/* name */
+			reduce(45),		/* name, reduce: IdVal */
 			nil,		/* : */
-			nil,		/* type */
-			nil,		/* sanitized */
-			nil,		/* parallel */
-			nil,		/* interpreter */
-			nil,		/* scheduler */
-			nil,		/* script */
-			nil,		/* outputs */
-			nil,		/* , */
-			nil,		/* wait */
-			nil,		/* inputs */
+			reduce(45),		/* type, reduce: IdVal */
+			reduce(45),		/* sanitized, reduce: IdVal */
+			reduce(45),		/* parallel, reduce: IdVal */
+			reduce(45),		/* interpreter, reduce: IdVal */
+			reduce(45),		/* scheduler, reduce: IdVal */
+			reduce(45),		/* script, reduce: IdVal */
+			reduce(45),		/* outputs, reduce: IdVal */
+			reduce(45),		/* ,, reduce: IdVal */
+			reduce(45),		/* wait, reduce: IdVal */
+			reduce(45),		/* inputs, reduce: IdVal */
 			nil,		/* * */
 			nil,		/* < */
-			nil,		/* ( */
+			reduce(45),		/* (, reduce: IdVal */
 			nil,		/* ) */
 			nil,		/* = */
-			shift(55),		/* id */
+			nil,		/* id */
 			nil,		/* str_lit */
 			nil,		/* path */
 			nil,		/* true */
@@ -2734,7 +2734,7 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* = */
-			shift(58),		/* id */
+			shift(55),		/* id */
 			nil,		/* str_lit */
 			nil,		/* path */
 			nil,		/* true */
@@ -2768,7 +2768,44 @@ var actionTab = actionTable{
 			nil,		/* inputs */
 			nil,		/* * */
 			nil,		/* < */
-			shift(93),		/* ( */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* = */
+			shift(58),		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S75
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			nil,		/* , */
+			nil,		/* wait */
+			nil,		/* inputs */
+			nil,		/* * */
+			nil,		/* < */
+			shift(99),		/* ( */
 			nil,		/* ) */
 			reduce(42),		/* =, reduce: TypeDef */
 			nil,		/* id */
@@ -2785,7 +2822,44 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S75
+	actionRow{ // S76
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			nil,		/* , */
+			nil,		/* wait */
+			nil,		/* inputs */
+			nil,		/* * */
+			nil,		/* < */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* = */
+			nil,		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			shift(94),		/* 0 */
+			shift(95),		/* 1 */
+			shift(96),		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S77
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -2822,80 +2896,6 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S76
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* empty */
-			nil,		/* name */
-			nil,		/* : */
-			nil,		/* type */
-			nil,		/* sanitized */
-			nil,		/* parallel */
-			nil,		/* interpreter */
-			nil,		/* scheduler */
-			nil,		/* script */
-			nil,		/* outputs */
-			nil,		/* , */
-			nil,		/* wait */
-			nil,		/* inputs */
-			nil,		/* * */
-			nil,		/* < */
-			reduce(44),		/* (, reduce: IdVal */
-			nil,		/* ) */
-			reduce(44),		/* =, reduce: IdVal */
-			nil,		/* id */
-			nil,		/* str_lit */
-			nil,		/* path */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* t */
-			nil,		/* f */
-			nil,		/* 0 */
-			nil,		/* 1 */
-			nil,		/* pos_int */
-			
-		},
-
-	},
-	actionRow{ // S77
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* empty */
-			nil,		/* name */
-			nil,		/* : */
-			nil,		/* type */
-			nil,		/* sanitized */
-			nil,		/* parallel */
-			nil,		/* interpreter */
-			nil,		/* scheduler */
-			nil,		/* script */
-			nil,		/* outputs */
-			nil,		/* , */
-			nil,		/* wait */
-			nil,		/* inputs */
-			nil,		/* * */
-			nil,		/* < */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* = */
-			shift(96),		/* id */
-			nil,		/* str_lit */
-			nil,		/* path */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* t */
-			nil,		/* f */
-			nil,		/* 0 */
-			nil,		/* 1 */
-			nil,		/* pos_int */
-			
-		},
-
-	},
 	actionRow{ // S78
 				canRecover: false,
 		actions: [numSymbols]action{
@@ -2916,10 +2916,10 @@ var actionTab = actionTable{
 			nil,		/* inputs */
 			nil,		/* * */
 			nil,		/* < */
-			shift(100),		/* ( */
+			reduce(45),		/* (, reduce: IdVal */
 			nil,		/* ) */
-			nil,		/* = */
-			shift(68),		/* id */
+			reduce(45),		/* =, reduce: IdVal */
+			nil,		/* id */
 			nil,		/* str_lit */
 			nil,		/* path */
 			nil,		/* true */
@@ -2953,10 +2953,10 @@ var actionTab = actionTable{
 			nil,		/* inputs */
 			nil,		/* * */
 			nil,		/* < */
-			shift(104),		/* ( */
+			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* = */
-			shift(68),		/* id */
+			shift(103),		/* id */
 			nil,		/* str_lit */
 			nil,		/* path */
 			nil,		/* true */
@@ -2990,7 +2990,7 @@ var actionTab = actionTable{
 			nil,		/* inputs */
 			nil,		/* * */
 			nil,		/* < */
-			shift(104),		/* ( */
+			shift(107),		/* ( */
 			nil,		/* ) */
 			nil,		/* = */
 			shift(68),		/* id */
@@ -3027,7 +3027,7 @@ var actionTab = actionTable{
 			nil,		/* inputs */
 			nil,		/* * */
 			nil,		/* < */
-			shift(100),		/* ( */
+			shift(111),		/* ( */
 			nil,		/* ) */
 			nil,		/* = */
 			shift(68),		/* id */
@@ -3064,7 +3064,7 @@ var actionTab = actionTable{
 			nil,		/* inputs */
 			nil,		/* * */
 			nil,		/* < */
-			shift(110),		/* ( */
+			shift(111),		/* ( */
 			nil,		/* ) */
 			nil,		/* = */
 			shift(68),		/* id */
@@ -3101,10 +3101,10 @@ var actionTab = actionTable{
 			nil,		/* inputs */
 			nil,		/* * */
 			nil,		/* < */
-			nil,		/* ( */
+			shift(107),		/* ( */
 			nil,		/* ) */
-			shift(111),		/* = */
-			nil,		/* id */
+			nil,		/* = */
+			shift(68),		/* id */
 			nil,		/* str_lit */
 			nil,		/* path */
 			nil,		/* true */
@@ -3138,10 +3138,10 @@ var actionTab = actionTable{
 			nil,		/* inputs */
 			nil,		/* * */
 			nil,		/* < */
-			nil,		/* ( */
-			shift(112),		/* ) */
+			shift(117),		/* ( */
+			nil,		/* ) */
 			nil,		/* = */
-			nil,		/* id */
+			shift(68),		/* id */
 			nil,		/* str_lit */
 			nil,		/* path */
 			nil,		/* true */
@@ -3173,11 +3173,11 @@ var actionTab = actionTable{
 			nil,		/* , */
 			nil,		/* wait */
 			nil,		/* inputs */
-			shift(113),		/* * */
+			nil,		/* * */
 			nil,		/* < */
 			nil,		/* ( */
-			reduce(26),		/* ), reduce: IterOper */
-			nil,		/* = */
+			nil,		/* ) */
+			shift(118),		/* = */
 			nil,		/* id */
 			nil,		/* str_lit */
 			nil,		/* path */
@@ -3207,7 +3207,81 @@ var actionTab = actionTable{
 			nil,		/* scheduler */
 			nil,		/* script */
 			nil,		/* outputs */
-			shift(114),		/* , */
+			nil,		/* , */
+			nil,		/* wait */
+			nil,		/* inputs */
+			nil,		/* * */
+			nil,		/* < */
+			nil,		/* ( */
+			shift(119),		/* ) */
+			nil,		/* = */
+			nil,		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S87
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			nil,		/* , */
+			nil,		/* wait */
+			nil,		/* inputs */
+			shift(120),		/* * */
+			nil,		/* < */
+			nil,		/* ( */
+			reduce(26),		/* ), reduce: IterOper */
+			nil,		/* = */
+			nil,		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S88
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			shift(121),		/* , */
 			nil,		/* wait */
 			nil,		/* inputs */
 			nil,		/* * */
@@ -3229,7 +3303,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S87
+	actionRow{ // S89
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -3266,7 +3340,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S88
+	actionRow{ // S90
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -3303,7 +3377,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S89
+	actionRow{ // S91
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -3318,11 +3392,11 @@ var actionTab = actionTable{
 			nil,		/* scheduler */
 			nil,		/* script */
 			nil,		/* outputs */
-			shift(115),		/* , */
+			shift(122),		/* , */
 			nil,		/* wait */
 			nil,		/* inputs */
-			shift(116),		/* * */
-			shift(117),		/* < */
+			shift(123),		/* * */
+			shift(124),		/* < */
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* = */
@@ -3340,7 +3414,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S90
+	actionRow{ // S92
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -3370,14 +3444,162 @@ var actionTab = actionTable{
 			nil,		/* false */
 			nil,		/* t */
 			nil,		/* f */
-			shift(119),		/* 0 */
-			shift(120),		/* 1 */
-			shift(121),		/* pos_int */
+			shift(94),		/* 0 */
+			shift(95),		/* 1 */
+			shift(96),		/* pos_int */
 			
 		},
 
 	},
-	actionRow{ // S91
+	actionRow{ // S93
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			nil,		/* , */
+			nil,		/* wait */
+			nil,		/* inputs */
+			nil,		/* * */
+			nil,		/* < */
+			nil,		/* ( */
+			shift(126),		/* ) */
+			nil,		/* = */
+			nil,		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S94
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			nil,		/* , */
+			nil,		/* wait */
+			nil,		/* inputs */
+			nil,		/* * */
+			nil,		/* < */
+			nil,		/* ( */
+			reduce(56),		/* ), reduce: IntVal */
+			nil,		/* = */
+			nil,		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S95
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			nil,		/* , */
+			nil,		/* wait */
+			nil,		/* inputs */
+			nil,		/* * */
+			nil,		/* < */
+			nil,		/* ( */
+			reduce(57),		/* ), reduce: IntVal */
+			nil,		/* = */
+			nil,		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S96
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			nil,		/* , */
+			nil,		/* wait */
+			nil,		/* inputs */
+			nil,		/* * */
+			nil,		/* < */
+			nil,		/* ( */
+			reduce(55),		/* ), reduce: IntVal */
+			nil,		/* = */
+			nil,		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S97
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -3414,7 +3636,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S92
+	actionRow{ // S98
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -3451,7 +3673,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S93
+	actionRow{ // S99
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -3481,21 +3703,58 @@ var actionTab = actionTable{
 			nil,		/* false */
 			nil,		/* t */
 			nil,		/* f */
-			shift(119),		/* 0 */
-			shift(120),		/* 1 */
-			shift(121),		/* pos_int */
+			shift(94),		/* 0 */
+			shift(95),		/* 1 */
+			shift(96),		/* pos_int */
 			
 		},
 
 	},
-	actionRow{ // S94
+	actionRow{ // S100
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			nil,		/* , */
+			nil,		/* wait */
+			nil,		/* inputs */
+			nil,		/* * */
+			nil,		/* < */
+			nil,		/* ( */
+			shift(128),		/* ) */
+			nil,		/* = */
+			nil,		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S101
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			reduce(38),		/* $, reduce: SourceDef */
 			nil,		/* empty */
 			reduce(38),		/* name, reduce: SourceDef */
-			shift(123),		/* : */
+			shift(129),		/* : */
 			reduce(38),		/* type, reduce: SourceDef */
 			reduce(38),		/* sanitized, reduce: SourceDef */
 			reduce(38),		/* parallel, reduce: SourceDef */
@@ -3525,7 +3784,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S95
+	actionRow{ // S102
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -3562,285 +3821,26 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S96
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			reduce(44),		/* $, reduce: IdVal */
-			nil,		/* empty */
-			reduce(44),		/* name, reduce: IdVal */
-			reduce(44),		/* :, reduce: IdVal */
-			reduce(44),		/* type, reduce: IdVal */
-			reduce(44),		/* sanitized, reduce: IdVal */
-			reduce(44),		/* parallel, reduce: IdVal */
-			reduce(44),		/* interpreter, reduce: IdVal */
-			reduce(44),		/* scheduler, reduce: IdVal */
-			reduce(44),		/* script, reduce: IdVal */
-			reduce(44),		/* outputs, reduce: IdVal */
-			reduce(44),		/* ,, reduce: IdVal */
-			reduce(44),		/* wait, reduce: IdVal */
-			reduce(44),		/* inputs, reduce: IdVal */
-			reduce(44),		/* *, reduce: IdVal */
-			reduce(44),		/* <, reduce: IdVal */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* = */
-			nil,		/* id */
-			nil,		/* str_lit */
-			nil,		/* path */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* t */
-			nil,		/* f */
-			nil,		/* 0 */
-			nil,		/* 1 */
-			nil,		/* pos_int */
-			
-		},
-
-	},
-	actionRow{ // S97
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* empty */
-			nil,		/* name */
-			nil,		/* : */
-			nil,		/* type */
-			nil,		/* sanitized */
-			nil,		/* parallel */
-			nil,		/* interpreter */
-			nil,		/* scheduler */
-			nil,		/* script */
-			nil,		/* outputs */
-			nil,		/* , */
-			nil,		/* wait */
-			nil,		/* inputs */
-			nil,		/* * */
-			nil,		/* < */
-			nil,		/* ( */
-			nil,		/* ) */
-			shift(124),		/* = */
-			nil,		/* id */
-			nil,		/* str_lit */
-			nil,		/* path */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* t */
-			nil,		/* f */
-			nil,		/* 0 */
-			nil,		/* 1 */
-			nil,		/* pos_int */
-			
-		},
-
-	},
-	actionRow{ // S98
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			reduce(35),		/* $, reduce: IterNode */
-			nil,		/* empty */
-			reduce(35),		/* name, reduce: IterNode */
-			nil,		/* : */
-			reduce(35),		/* type, reduce: IterNode */
-			reduce(35),		/* sanitized, reduce: IterNode */
-			reduce(35),		/* parallel, reduce: IterNode */
-			reduce(35),		/* interpreter, reduce: IterNode */
-			reduce(35),		/* scheduler, reduce: IterNode */
-			reduce(35),		/* script, reduce: IterNode */
-			reduce(35),		/* outputs, reduce: IterNode */
-			nil,		/* , */
-			reduce(35),		/* wait, reduce: IterNode */
-			reduce(35),		/* inputs, reduce: IterNode */
-			reduce(35),		/* *, reduce: IterNode */
-			nil,		/* < */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* = */
-			nil,		/* id */
-			nil,		/* str_lit */
-			nil,		/* path */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* t */
-			nil,		/* f */
-			nil,		/* 0 */
-			nil,		/* 1 */
-			nil,		/* pos_int */
-			
-		},
-
-	},
-	actionRow{ // S99
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			reduce(31),		/* $, reduce: IterOperCross */
-			nil,		/* empty */
-			reduce(31),		/* name, reduce: IterOperCross */
-			nil,		/* : */
-			reduce(31),		/* type, reduce: IterOperCross */
-			reduce(31),		/* sanitized, reduce: IterOperCross */
-			reduce(31),		/* parallel, reduce: IterOperCross */
-			reduce(31),		/* interpreter, reduce: IterOperCross */
-			reduce(31),		/* scheduler, reduce: IterOperCross */
-			reduce(31),		/* script, reduce: IterOperCross */
-			reduce(31),		/* outputs, reduce: IterOperCross */
-			nil,		/* , */
-			reduce(31),		/* wait, reduce: IterOperCross */
-			reduce(31),		/* inputs, reduce: IterOperCross */
-			reduce(31),		/* *, reduce: IterOperCross */
-			nil,		/* < */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* = */
-			nil,		/* id */
-			nil,		/* str_lit */
-			nil,		/* path */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* t */
-			nil,		/* f */
-			nil,		/* 0 */
-			nil,		/* 1 */
-			nil,		/* pos_int */
-			
-		},
-
-	},
-	actionRow{ // S100
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* empty */
-			nil,		/* name */
-			nil,		/* : */
-			nil,		/* type */
-			nil,		/* sanitized */
-			nil,		/* parallel */
-			nil,		/* interpreter */
-			nil,		/* scheduler */
-			nil,		/* script */
-			nil,		/* outputs */
-			nil,		/* , */
-			nil,		/* wait */
-			nil,		/* inputs */
-			nil,		/* * */
-			nil,		/* < */
-			shift(67),		/* ( */
-			nil,		/* ) */
-			nil,		/* = */
-			shift(68),		/* id */
-			nil,		/* str_lit */
-			nil,		/* path */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* t */
-			nil,		/* f */
-			nil,		/* 0 */
-			nil,		/* 1 */
-			nil,		/* pos_int */
-			
-		},
-
-	},
-	actionRow{ // S101
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* empty */
-			nil,		/* name */
-			nil,		/* : */
-			nil,		/* type */
-			nil,		/* sanitized */
-			nil,		/* parallel */
-			nil,		/* interpreter */
-			nil,		/* scheduler */
-			nil,		/* script */
-			nil,		/* outputs */
-			nil,		/* , */
-			nil,		/* wait */
-			nil,		/* inputs */
-			nil,		/* * */
-			nil,		/* < */
-			nil,		/* ( */
-			nil,		/* ) */
-			shift(126),		/* = */
-			nil,		/* id */
-			nil,		/* str_lit */
-			nil,		/* path */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* t */
-			nil,		/* f */
-			nil,		/* 0 */
-			nil,		/* 1 */
-			nil,		/* pos_int */
-			
-		},
-
-	},
-	actionRow{ // S102
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			reduce(35),		/* $, reduce: IterNode */
-			nil,		/* empty */
-			reduce(35),		/* name, reduce: IterNode */
-			nil,		/* : */
-			reduce(35),		/* type, reduce: IterNode */
-			reduce(35),		/* sanitized, reduce: IterNode */
-			reduce(35),		/* parallel, reduce: IterNode */
-			reduce(35),		/* interpreter, reduce: IterNode */
-			reduce(35),		/* scheduler, reduce: IterNode */
-			reduce(35),		/* script, reduce: IterNode */
-			reduce(35),		/* outputs, reduce: IterNode */
-			reduce(35),		/* ,, reduce: IterNode */
-			reduce(35),		/* wait, reduce: IterNode */
-			reduce(35),		/* inputs, reduce: IterNode */
-			nil,		/* * */
-			nil,		/* < */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* = */
-			nil,		/* id */
-			nil,		/* str_lit */
-			nil,		/* path */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* t */
-			nil,		/* f */
-			nil,		/* 0 */
-			nil,		/* 1 */
-			nil,		/* pos_int */
-			
-		},
-
-	},
 	actionRow{ // S103
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			reduce(33),		/* $, reduce: IterOperDot */
+			reduce(45),		/* $, reduce: IdVal */
 			nil,		/* empty */
-			reduce(33),		/* name, reduce: IterOperDot */
-			nil,		/* : */
-			reduce(33),		/* type, reduce: IterOperDot */
-			reduce(33),		/* sanitized, reduce: IterOperDot */
-			reduce(33),		/* parallel, reduce: IterOperDot */
-			reduce(33),		/* interpreter, reduce: IterOperDot */
-			reduce(33),		/* scheduler, reduce: IterOperDot */
-			reduce(33),		/* script, reduce: IterOperDot */
-			reduce(33),		/* outputs, reduce: IterOperDot */
-			reduce(33),		/* ,, reduce: IterOperDot */
-			reduce(33),		/* wait, reduce: IterOperDot */
-			reduce(33),		/* inputs, reduce: IterOperDot */
-			nil,		/* * */
-			nil,		/* < */
+			reduce(45),		/* name, reduce: IdVal */
+			reduce(45),		/* :, reduce: IdVal */
+			reduce(45),		/* type, reduce: IdVal */
+			reduce(45),		/* sanitized, reduce: IdVal */
+			reduce(45),		/* parallel, reduce: IdVal */
+			reduce(45),		/* interpreter, reduce: IdVal */
+			reduce(45),		/* scheduler, reduce: IdVal */
+			reduce(45),		/* script, reduce: IdVal */
+			reduce(45),		/* outputs, reduce: IdVal */
+			reduce(45),		/* ,, reduce: IdVal */
+			reduce(45),		/* wait, reduce: IdVal */
+			reduce(45),		/* inputs, reduce: IdVal */
+			reduce(45),		/* *, reduce: IdVal */
+			reduce(45),		/* <, reduce: IdVal */
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* = */
@@ -3878,10 +3878,10 @@ var actionTab = actionTable{
 			nil,		/* inputs */
 			nil,		/* * */
 			nil,		/* < */
-			shift(67),		/* ( */
+			nil,		/* ( */
 			nil,		/* ) */
-			nil,		/* = */
-			shift(68),		/* id */
+			shift(130),		/* = */
+			nil,		/* id */
 			nil,		/* str_lit */
 			nil,		/* path */
 			nil,		/* true */
@@ -3899,21 +3899,21 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			reduce(32),		/* $, reduce: IterOperDot */
+			reduce(35),		/* $, reduce: IterNode */
 			nil,		/* empty */
-			reduce(32),		/* name, reduce: IterOperDot */
+			reduce(35),		/* name, reduce: IterNode */
 			nil,		/* : */
-			reduce(32),		/* type, reduce: IterOperDot */
-			reduce(32),		/* sanitized, reduce: IterOperDot */
-			reduce(32),		/* parallel, reduce: IterOperDot */
-			reduce(32),		/* interpreter, reduce: IterOperDot */
-			reduce(32),		/* scheduler, reduce: IterOperDot */
-			reduce(32),		/* script, reduce: IterOperDot */
-			reduce(32),		/* outputs, reduce: IterOperDot */
-			reduce(32),		/* ,, reduce: IterOperDot */
-			reduce(32),		/* wait, reduce: IterOperDot */
-			reduce(32),		/* inputs, reduce: IterOperDot */
-			nil,		/* * */
+			reduce(35),		/* type, reduce: IterNode */
+			reduce(35),		/* sanitized, reduce: IterNode */
+			reduce(35),		/* parallel, reduce: IterNode */
+			reduce(35),		/* interpreter, reduce: IterNode */
+			reduce(35),		/* scheduler, reduce: IterNode */
+			reduce(35),		/* script, reduce: IterNode */
+			reduce(35),		/* outputs, reduce: IterNode */
+			nil,		/* , */
+			reduce(35),		/* wait, reduce: IterNode */
+			reduce(35),		/* inputs, reduce: IterNode */
+			reduce(35),		/* *, reduce: IterNode */
 			nil,		/* < */
 			nil,		/* ( */
 			nil,		/* ) */
@@ -3936,21 +3936,21 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			reduce(30),		/* $, reduce: IterOperCross */
+			reduce(31),		/* $, reduce: IterOperCross */
 			nil,		/* empty */
-			reduce(30),		/* name, reduce: IterOperCross */
+			reduce(31),		/* name, reduce: IterOperCross */
 			nil,		/* : */
-			reduce(30),		/* type, reduce: IterOperCross */
-			reduce(30),		/* sanitized, reduce: IterOperCross */
-			reduce(30),		/* parallel, reduce: IterOperCross */
-			reduce(30),		/* interpreter, reduce: IterOperCross */
-			reduce(30),		/* scheduler, reduce: IterOperCross */
-			reduce(30),		/* script, reduce: IterOperCross */
-			reduce(30),		/* outputs, reduce: IterOperCross */
+			reduce(31),		/* type, reduce: IterOperCross */
+			reduce(31),		/* sanitized, reduce: IterOperCross */
+			reduce(31),		/* parallel, reduce: IterOperCross */
+			reduce(31),		/* interpreter, reduce: IterOperCross */
+			reduce(31),		/* scheduler, reduce: IterOperCross */
+			reduce(31),		/* script, reduce: IterOperCross */
+			reduce(31),		/* outputs, reduce: IterOperCross */
 			nil,		/* , */
-			reduce(30),		/* wait, reduce: IterOperCross */
-			reduce(30),		/* inputs, reduce: IterOperCross */
-			reduce(30),		/* *, reduce: IterOperCross */
+			reduce(31),		/* wait, reduce: IterOperCross */
+			reduce(31),		/* inputs, reduce: IterOperCross */
+			reduce(31),		/* *, reduce: IterOperCross */
 			nil,		/* < */
 			nil,		/* ( */
 			nil,		/* ) */
@@ -3989,10 +3989,10 @@ var actionTab = actionTable{
 			nil,		/* inputs */
 			nil,		/* * */
 			nil,		/* < */
-			nil,		/* ( */
+			shift(67),		/* ( */
 			nil,		/* ) */
-			shift(128),		/* = */
-			nil,		/* id */
+			nil,		/* = */
+			shift(68),		/* id */
 			nil,		/* str_lit */
 			nil,		/* path */
 			nil,		/* true */
@@ -4010,6 +4010,43 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			nil,		/* , */
+			nil,		/* wait */
+			nil,		/* inputs */
+			nil,		/* * */
+			nil,		/* < */
+			nil,		/* ( */
+			nil,		/* ) */
+			shift(132),		/* = */
+			nil,		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S109
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
 			reduce(35),		/* $, reduce: IterNode */
 			nil,		/* empty */
 			reduce(35),		/* name, reduce: IterNode */
@@ -4021,7 +4058,7 @@ var actionTab = actionTable{
 			reduce(35),		/* scheduler, reduce: IterNode */
 			reduce(35),		/* script, reduce: IterNode */
 			reduce(35),		/* outputs, reduce: IterNode */
-			nil,		/* , */
+			reduce(35),		/* ,, reduce: IterNode */
 			reduce(35),		/* wait, reduce: IterNode */
 			reduce(35),		/* inputs, reduce: IterNode */
 			nil,		/* * */
@@ -4043,24 +4080,24 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S109
+	actionRow{ // S110
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			reduce(34),		/* $, reduce: IterOperPrefix */
+			reduce(33),		/* $, reduce: IterOperDot */
 			nil,		/* empty */
-			reduce(34),		/* name, reduce: IterOperPrefix */
+			reduce(33),		/* name, reduce: IterOperDot */
 			nil,		/* : */
-			reduce(34),		/* type, reduce: IterOperPrefix */
-			reduce(34),		/* sanitized, reduce: IterOperPrefix */
-			reduce(34),		/* parallel, reduce: IterOperPrefix */
-			reduce(34),		/* interpreter, reduce: IterOperPrefix */
-			reduce(34),		/* scheduler, reduce: IterOperPrefix */
-			reduce(34),		/* script, reduce: IterOperPrefix */
-			reduce(34),		/* outputs, reduce: IterOperPrefix */
-			nil,		/* , */
-			reduce(34),		/* wait, reduce: IterOperPrefix */
-			reduce(34),		/* inputs, reduce: IterOperPrefix */
+			reduce(33),		/* type, reduce: IterOperDot */
+			reduce(33),		/* sanitized, reduce: IterOperDot */
+			reduce(33),		/* parallel, reduce: IterOperDot */
+			reduce(33),		/* interpreter, reduce: IterOperDot */
+			reduce(33),		/* scheduler, reduce: IterOperDot */
+			reduce(33),		/* script, reduce: IterOperDot */
+			reduce(33),		/* outputs, reduce: IterOperDot */
+			reduce(33),		/* ,, reduce: IterOperDot */
+			reduce(33),		/* wait, reduce: IterOperDot */
+			reduce(33),		/* inputs, reduce: IterOperDot */
 			nil,		/* * */
 			nil,		/* < */
 			nil,		/* ( */
@@ -4080,7 +4117,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S110
+	actionRow{ // S111
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -4117,63 +4154,26 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S111
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* empty */
-			nil,		/* name */
-			nil,		/* : */
-			nil,		/* type */
-			nil,		/* sanitized */
-			nil,		/* parallel */
-			nil,		/* interpreter */
-			nil,		/* scheduler */
-			nil,		/* script */
-			nil,		/* outputs */
-			nil,		/* , */
-			nil,		/* wait */
-			nil,		/* inputs */
-			nil,		/* * */
-			nil,		/* < */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* = */
-			shift(132),		/* id */
-			nil,		/* str_lit */
-			nil,		/* path */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* t */
-			nil,		/* f */
-			nil,		/* 0 */
-			nil,		/* 1 */
-			nil,		/* pos_int */
-			
-		},
-
-	},
 	actionRow{ // S112
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			nil,		/* $ */
+			reduce(32),		/* $, reduce: IterOperDot */
 			nil,		/* empty */
-			nil,		/* name */
+			reduce(32),		/* name, reduce: IterOperDot */
 			nil,		/* : */
-			nil,		/* type */
-			nil,		/* sanitized */
-			nil,		/* parallel */
-			nil,		/* interpreter */
-			nil,		/* scheduler */
-			nil,		/* script */
-			nil,		/* outputs */
-			reduce(36),		/* ,, reduce: IterNode */
-			nil,		/* wait */
-			nil,		/* inputs */
-			reduce(36),		/* *, reduce: IterNode */
-			reduce(36),		/* <, reduce: IterNode */
+			reduce(32),		/* type, reduce: IterOperDot */
+			reduce(32),		/* sanitized, reduce: IterOperDot */
+			reduce(32),		/* parallel, reduce: IterOperDot */
+			reduce(32),		/* interpreter, reduce: IterOperDot */
+			reduce(32),		/* scheduler, reduce: IterOperDot */
+			reduce(32),		/* script, reduce: IterOperDot */
+			reduce(32),		/* outputs, reduce: IterOperDot */
+			reduce(32),		/* ,, reduce: IterOperDot */
+			reduce(32),		/* wait, reduce: IterOperDot */
+			reduce(32),		/* inputs, reduce: IterOperDot */
+			nil,		/* * */
+			nil,		/* < */
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* = */
@@ -4195,26 +4195,26 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			nil,		/* $ */
+			reduce(30),		/* $, reduce: IterOperCross */
 			nil,		/* empty */
-			nil,		/* name */
+			reduce(30),		/* name, reduce: IterOperCross */
 			nil,		/* : */
-			nil,		/* type */
-			nil,		/* sanitized */
-			nil,		/* parallel */
-			nil,		/* interpreter */
-			nil,		/* scheduler */
-			nil,		/* script */
-			nil,		/* outputs */
+			reduce(30),		/* type, reduce: IterOperCross */
+			reduce(30),		/* sanitized, reduce: IterOperCross */
+			reduce(30),		/* parallel, reduce: IterOperCross */
+			reduce(30),		/* interpreter, reduce: IterOperCross */
+			reduce(30),		/* scheduler, reduce: IterOperCross */
+			reduce(30),		/* script, reduce: IterOperCross */
+			reduce(30),		/* outputs, reduce: IterOperCross */
 			nil,		/* , */
-			nil,		/* wait */
-			nil,		/* inputs */
-			nil,		/* * */
+			reduce(30),		/* wait, reduce: IterOperCross */
+			reduce(30),		/* inputs, reduce: IterOperCross */
+			reduce(30),		/* *, reduce: IterOperCross */
 			nil,		/* < */
-			shift(136),		/* ( */
+			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* = */
-			shift(68),		/* id */
+			nil,		/* id */
 			nil,		/* str_lit */
 			nil,		/* path */
 			nil,		/* true */
@@ -4248,10 +4248,10 @@ var actionTab = actionTable{
 			nil,		/* inputs */
 			nil,		/* * */
 			nil,		/* < */
-			shift(140),		/* ( */
+			nil,		/* ( */
 			nil,		/* ) */
-			nil,		/* = */
-			shift(68),		/* id */
+			shift(134),		/* = */
+			nil,		/* id */
 			nil,		/* str_lit */
 			nil,		/* path */
 			nil,		/* true */
@@ -4269,26 +4269,26 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			nil,		/* $ */
+			reduce(35),		/* $, reduce: IterNode */
 			nil,		/* empty */
-			nil,		/* name */
+			reduce(35),		/* name, reduce: IterNode */
 			nil,		/* : */
-			nil,		/* type */
-			nil,		/* sanitized */
-			nil,		/* parallel */
-			nil,		/* interpreter */
-			nil,		/* scheduler */
-			nil,		/* script */
-			nil,		/* outputs */
+			reduce(35),		/* type, reduce: IterNode */
+			reduce(35),		/* sanitized, reduce: IterNode */
+			reduce(35),		/* parallel, reduce: IterNode */
+			reduce(35),		/* interpreter, reduce: IterNode */
+			reduce(35),		/* scheduler, reduce: IterNode */
+			reduce(35),		/* script, reduce: IterNode */
+			reduce(35),		/* outputs, reduce: IterNode */
 			nil,		/* , */
-			nil,		/* wait */
-			nil,		/* inputs */
+			reduce(35),		/* wait, reduce: IterNode */
+			reduce(35),		/* inputs, reduce: IterNode */
 			nil,		/* * */
 			nil,		/* < */
-			shift(140),		/* ( */
+			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* = */
-			shift(68),		/* id */
+			nil,		/* id */
 			nil,		/* str_lit */
 			nil,		/* path */
 			nil,		/* true */
@@ -4306,26 +4306,26 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			nil,		/* $ */
+			reduce(34),		/* $, reduce: IterOperPrefix */
 			nil,		/* empty */
-			nil,		/* name */
+			reduce(34),		/* name, reduce: IterOperPrefix */
 			nil,		/* : */
-			nil,		/* type */
-			nil,		/* sanitized */
-			nil,		/* parallel */
-			nil,		/* interpreter */
-			nil,		/* scheduler */
-			nil,		/* script */
-			nil,		/* outputs */
+			reduce(34),		/* type, reduce: IterOperPrefix */
+			reduce(34),		/* sanitized, reduce: IterOperPrefix */
+			reduce(34),		/* parallel, reduce: IterOperPrefix */
+			reduce(34),		/* interpreter, reduce: IterOperPrefix */
+			reduce(34),		/* scheduler, reduce: IterOperPrefix */
+			reduce(34),		/* script, reduce: IterOperPrefix */
+			reduce(34),		/* outputs, reduce: IterOperPrefix */
 			nil,		/* , */
-			nil,		/* wait */
-			nil,		/* inputs */
+			reduce(34),		/* wait, reduce: IterOperPrefix */
+			reduce(34),		/* inputs, reduce: IterOperPrefix */
 			nil,		/* * */
 			nil,		/* < */
-			shift(136),		/* ( */
+			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* = */
-			shift(68),		/* id */
+			nil,		/* id */
 			nil,		/* str_lit */
 			nil,		/* path */
 			nil,		/* true */
@@ -4359,7 +4359,7 @@ var actionTab = actionTable{
 			nil,		/* inputs */
 			nil,		/* * */
 			nil,		/* < */
-			shift(146),		/* ( */
+			shift(67),		/* ( */
 			nil,		/* ) */
 			nil,		/* = */
 			shift(68),		/* id */
@@ -4397,9 +4397,9 @@ var actionTab = actionTable{
 			nil,		/* * */
 			nil,		/* < */
 			nil,		/* ( */
-			shift(147),		/* ) */
+			nil,		/* ) */
 			nil,		/* = */
-			nil,		/* id */
+			shift(138),		/* id */
 			nil,		/* str_lit */
 			nil,		/* path */
 			nil,		/* true */
@@ -4428,13 +4428,13 @@ var actionTab = actionTable{
 			nil,		/* scheduler */
 			nil,		/* script */
 			nil,		/* outputs */
-			nil,		/* , */
+			reduce(36),		/* ,, reduce: IterNode */
 			nil,		/* wait */
 			nil,		/* inputs */
-			nil,		/* * */
-			nil,		/* < */
+			reduce(36),		/* *, reduce: IterNode */
+			reduce(36),		/* <, reduce: IterNode */
 			nil,		/* ( */
-			reduce(55),		/* ), reduce: IntVal */
+			nil,		/* ) */
 			nil,		/* = */
 			nil,		/* id */
 			nil,		/* str_lit */
@@ -4470,10 +4470,10 @@ var actionTab = actionTable{
 			nil,		/* inputs */
 			nil,		/* * */
 			nil,		/* < */
-			nil,		/* ( */
-			reduce(56),		/* ), reduce: IntVal */
+			shift(142),		/* ( */
+			nil,		/* ) */
 			nil,		/* = */
-			nil,		/* id */
+			shift(68),		/* id */
 			nil,		/* str_lit */
 			nil,		/* path */
 			nil,		/* true */
@@ -4507,10 +4507,10 @@ var actionTab = actionTable{
 			nil,		/* inputs */
 			nil,		/* * */
 			nil,		/* < */
-			nil,		/* ( */
-			reduce(54),		/* ), reduce: IntVal */
+			shift(146),		/* ( */
+			nil,		/* ) */
 			nil,		/* = */
-			nil,		/* id */
+			shift(68),		/* id */
 			nil,		/* str_lit */
 			nil,		/* path */
 			nil,		/* true */
@@ -4544,10 +4544,10 @@ var actionTab = actionTable{
 			nil,		/* inputs */
 			nil,		/* * */
 			nil,		/* < */
-			nil,		/* ( */
-			shift(148),		/* ) */
+			shift(146),		/* ( */
+			nil,		/* ) */
 			nil,		/* = */
-			nil,		/* id */
+			shift(68),		/* id */
 			nil,		/* str_lit */
 			nil,		/* path */
 			nil,		/* true */
@@ -4581,10 +4581,10 @@ var actionTab = actionTable{
 			nil,		/* inputs */
 			nil,		/* * */
 			nil,		/* < */
-			nil,		/* ( */
+			shift(142),		/* ( */
 			nil,		/* ) */
 			nil,		/* = */
-			shift(150),		/* id */
+			shift(68),		/* id */
 			nil,		/* str_lit */
 			nil,		/* path */
 			nil,		/* true */
@@ -4618,10 +4618,10 @@ var actionTab = actionTable{
 			nil,		/* inputs */
 			nil,		/* * */
 			nil,		/* < */
-			nil,		/* ( */
+			shift(152),		/* ( */
 			nil,		/* ) */
 			nil,		/* = */
-			shift(153),		/* id */
+			shift(68),		/* id */
 			nil,		/* str_lit */
 			nil,		/* path */
 			nil,		/* true */
@@ -4656,7 +4656,7 @@ var actionTab = actionTable{
 			nil,		/* * */
 			nil,		/* < */
 			nil,		/* ( */
-			shift(154),		/* ) */
+			shift(153),		/* ) */
 			nil,		/* = */
 			nil,		/* id */
 			nil,		/* str_lit */
@@ -4676,26 +4676,26 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			nil,		/* $ */
+			reduce(44),		/* $, reduce: TypeDef */
 			nil,		/* empty */
-			nil,		/* name */
+			reduce(44),		/* name, reduce: TypeDef */
 			nil,		/* : */
-			nil,		/* type */
-			nil,		/* sanitized */
-			nil,		/* parallel */
-			nil,		/* interpreter */
-			nil,		/* scheduler */
-			nil,		/* script */
-			nil,		/* outputs */
-			nil,		/* , */
-			nil,		/* wait */
-			nil,		/* inputs */
+			reduce(44),		/* type, reduce: TypeDef */
+			reduce(44),		/* sanitized, reduce: TypeDef */
+			reduce(44),		/* parallel, reduce: TypeDef */
+			reduce(44),		/* interpreter, reduce: TypeDef */
+			reduce(44),		/* scheduler, reduce: TypeDef */
+			reduce(44),		/* script, reduce: TypeDef */
+			reduce(44),		/* outputs, reduce: TypeDef */
+			reduce(44),		/* ,, reduce: TypeDef */
+			reduce(44),		/* wait, reduce: TypeDef */
+			reduce(44),		/* inputs, reduce: TypeDef */
 			nil,		/* * */
 			nil,		/* < */
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* = */
-			shift(157),		/* id */
+			nil,		/* id */
 			nil,		/* str_lit */
 			nil,		/* path */
 			nil,		/* true */
@@ -4730,7 +4730,7 @@ var actionTab = actionTable{
 			nil,		/* * */
 			nil,		/* < */
 			nil,		/* ( */
-			shift(158),		/* ) */
+			shift(154),		/* ) */
 			nil,		/* = */
 			nil,		/* id */
 			nil,		/* str_lit */
@@ -4768,8 +4768,8 @@ var actionTab = actionTable{
 			nil,		/* < */
 			nil,		/* ( */
 			nil,		/* ) */
-			nil,		/* = */
-			shift(161),		/* id */
+			reduce(44),		/* =, reduce: TypeDef */
+			nil,		/* id */
 			nil,		/* str_lit */
 			nil,		/* path */
 			nil,		/* true */
@@ -4804,9 +4804,9 @@ var actionTab = actionTable{
 			nil,		/* * */
 			nil,		/* < */
 			nil,		/* ( */
-			shift(162),		/* ) */
+			nil,		/* ) */
 			nil,		/* = */
-			nil,		/* id */
+			shift(156),		/* id */
 			nil,		/* str_lit */
 			nil,		/* path */
 			nil,		/* true */
@@ -4827,7 +4827,229 @@ var actionTab = actionTable{
 			nil,		/* $ */
 			nil,		/* empty */
 			nil,		/* name */
-			shift(163),		/* : */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			nil,		/* , */
+			nil,		/* wait */
+			nil,		/* inputs */
+			nil,		/* * */
+			nil,		/* < */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* = */
+			shift(159),		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S131
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			nil,		/* , */
+			nil,		/* wait */
+			nil,		/* inputs */
+			nil,		/* * */
+			nil,		/* < */
+			nil,		/* ( */
+			shift(160),		/* ) */
+			nil,		/* = */
+			nil,		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S132
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			nil,		/* , */
+			nil,		/* wait */
+			nil,		/* inputs */
+			nil,		/* * */
+			nil,		/* < */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* = */
+			shift(163),		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S133
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			nil,		/* , */
+			nil,		/* wait */
+			nil,		/* inputs */
+			nil,		/* * */
+			nil,		/* < */
+			nil,		/* ( */
+			shift(164),		/* ) */
+			nil,		/* = */
+			nil,		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S134
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			nil,		/* , */
+			nil,		/* wait */
+			nil,		/* inputs */
+			nil,		/* * */
+			nil,		/* < */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* = */
+			shift(167),		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S135
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			nil,		/* , */
+			nil,		/* wait */
+			nil,		/* inputs */
+			nil,		/* * */
+			nil,		/* < */
+			nil,		/* ( */
+			shift(168),		/* ) */
+			nil,		/* = */
+			nil,		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S136
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			shift(169),		/* : */
 			nil,		/* type */
 			nil,		/* sanitized */
 			nil,		/* parallel */
@@ -4857,7 +5079,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S131
+	actionRow{ // S137
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -4894,14 +5116,14 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S132
+	actionRow{ // S138
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
 			nil,		/* empty */
 			nil,		/* name */
-			reduce(44),		/* :, reduce: IdVal */
+			reduce(45),		/* :, reduce: IdVal */
 			nil,		/* type */
 			nil,		/* sanitized */
 			nil,		/* parallel */
@@ -4909,13 +5131,13 @@ var actionTab = actionTable{
 			nil,		/* scheduler */
 			nil,		/* script */
 			nil,		/* outputs */
-			reduce(44),		/* ,, reduce: IdVal */
+			reduce(45),		/* ,, reduce: IdVal */
 			nil,		/* wait */
 			nil,		/* inputs */
-			reduce(44),		/* *, reduce: IdVal */
-			reduce(44),		/* <, reduce: IdVal */
+			reduce(45),		/* *, reduce: IdVal */
+			reduce(45),		/* <, reduce: IdVal */
 			nil,		/* ( */
-			reduce(44),		/* ), reduce: IdVal */
+			reduce(45),		/* ), reduce: IdVal */
 			nil,		/* = */
 			nil,		/* id */
 			nil,		/* str_lit */
@@ -4931,7 +5153,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S133
+	actionRow{ // S139
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -4953,7 +5175,7 @@ var actionTab = actionTable{
 			nil,		/* < */
 			nil,		/* ( */
 			nil,		/* ) */
-			shift(164),		/* = */
+			shift(170),		/* = */
 			nil,		/* id */
 			nil,		/* str_lit */
 			nil,		/* path */
@@ -4968,7 +5190,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S134
+	actionRow{ // S140
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -5005,7 +5227,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S135
+	actionRow{ // S141
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -5042,7 +5264,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S136
+	actionRow{ // S142
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -5079,7 +5301,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S137
+	actionRow{ // S143
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -5101,7 +5323,7 @@ var actionTab = actionTable{
 			nil,		/* < */
 			nil,		/* ( */
 			nil,		/* ) */
-			shift(166),		/* = */
+			shift(172),		/* = */
 			nil,		/* id */
 			nil,		/* str_lit */
 			nil,		/* path */
@@ -5116,7 +5338,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S138
+	actionRow{ // S144
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -5153,7 +5375,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S139
+	actionRow{ // S145
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -5175,228 +5397,6 @@ var actionTab = actionTable{
 			nil,		/* < */
 			nil,		/* ( */
 			reduce(33),		/* ), reduce: IterOperDot */
-			nil,		/* = */
-			nil,		/* id */
-			nil,		/* str_lit */
-			nil,		/* path */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* t */
-			nil,		/* f */
-			nil,		/* 0 */
-			nil,		/* 1 */
-			nil,		/* pos_int */
-			
-		},
-
-	},
-	actionRow{ // S140
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* empty */
-			nil,		/* name */
-			nil,		/* : */
-			nil,		/* type */
-			nil,		/* sanitized */
-			nil,		/* parallel */
-			nil,		/* interpreter */
-			nil,		/* scheduler */
-			nil,		/* script */
-			nil,		/* outputs */
-			nil,		/* , */
-			nil,		/* wait */
-			nil,		/* inputs */
-			nil,		/* * */
-			nil,		/* < */
-			shift(67),		/* ( */
-			nil,		/* ) */
-			nil,		/* = */
-			shift(68),		/* id */
-			nil,		/* str_lit */
-			nil,		/* path */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* t */
-			nil,		/* f */
-			nil,		/* 0 */
-			nil,		/* 1 */
-			nil,		/* pos_int */
-			
-		},
-
-	},
-	actionRow{ // S141
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* empty */
-			nil,		/* name */
-			nil,		/* : */
-			nil,		/* type */
-			nil,		/* sanitized */
-			nil,		/* parallel */
-			nil,		/* interpreter */
-			nil,		/* scheduler */
-			nil,		/* script */
-			nil,		/* outputs */
-			reduce(32),		/* ,, reduce: IterOperDot */
-			nil,		/* wait */
-			nil,		/* inputs */
-			nil,		/* * */
-			nil,		/* < */
-			nil,		/* ( */
-			reduce(32),		/* ), reduce: IterOperDot */
-			nil,		/* = */
-			nil,		/* id */
-			nil,		/* str_lit */
-			nil,		/* path */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* t */
-			nil,		/* f */
-			nil,		/* 0 */
-			nil,		/* 1 */
-			nil,		/* pos_int */
-			
-		},
-
-	},
-	actionRow{ // S142
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* empty */
-			nil,		/* name */
-			nil,		/* : */
-			nil,		/* type */
-			nil,		/* sanitized */
-			nil,		/* parallel */
-			nil,		/* interpreter */
-			nil,		/* scheduler */
-			nil,		/* script */
-			nil,		/* outputs */
-			nil,		/* , */
-			nil,		/* wait */
-			nil,		/* inputs */
-			reduce(30),		/* *, reduce: IterOperCross */
-			nil,		/* < */
-			nil,		/* ( */
-			reduce(30),		/* ), reduce: IterOperCross */
-			nil,		/* = */
-			nil,		/* id */
-			nil,		/* str_lit */
-			nil,		/* path */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* t */
-			nil,		/* f */
-			nil,		/* 0 */
-			nil,		/* 1 */
-			nil,		/* pos_int */
-			
-		},
-
-	},
-	actionRow{ // S143
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* empty */
-			nil,		/* name */
-			nil,		/* : */
-			nil,		/* type */
-			nil,		/* sanitized */
-			nil,		/* parallel */
-			nil,		/* interpreter */
-			nil,		/* scheduler */
-			nil,		/* script */
-			nil,		/* outputs */
-			nil,		/* , */
-			nil,		/* wait */
-			nil,		/* inputs */
-			nil,		/* * */
-			nil,		/* < */
-			nil,		/* ( */
-			nil,		/* ) */
-			shift(168),		/* = */
-			nil,		/* id */
-			nil,		/* str_lit */
-			nil,		/* path */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* t */
-			nil,		/* f */
-			nil,		/* 0 */
-			nil,		/* 1 */
-			nil,		/* pos_int */
-			
-		},
-
-	},
-	actionRow{ // S144
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* empty */
-			nil,		/* name */
-			nil,		/* : */
-			nil,		/* type */
-			nil,		/* sanitized */
-			nil,		/* parallel */
-			nil,		/* interpreter */
-			nil,		/* scheduler */
-			nil,		/* script */
-			nil,		/* outputs */
-			nil,		/* , */
-			nil,		/* wait */
-			nil,		/* inputs */
-			nil,		/* * */
-			nil,		/* < */
-			nil,		/* ( */
-			reduce(35),		/* ), reduce: IterNode */
-			nil,		/* = */
-			nil,		/* id */
-			nil,		/* str_lit */
-			nil,		/* path */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* t */
-			nil,		/* f */
-			nil,		/* 0 */
-			nil,		/* 1 */
-			nil,		/* pos_int */
-			
-		},
-
-	},
-	actionRow{ // S145
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* empty */
-			nil,		/* name */
-			nil,		/* : */
-			nil,		/* type */
-			nil,		/* sanitized */
-			nil,		/* parallel */
-			nil,		/* interpreter */
-			nil,		/* scheduler */
-			nil,		/* script */
-			nil,		/* outputs */
-			nil,		/* , */
-			nil,		/* wait */
-			nil,		/* inputs */
-			nil,		/* * */
-			nil,		/* < */
-			nil,		/* ( */
-			reduce(34),		/* ), reduce: IterOperPrefix */
 			nil,		/* = */
 			nil,		/* id */
 			nil,		/* str_lit */
@@ -5453,6 +5453,228 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			reduce(32),		/* ,, reduce: IterOperDot */
+			nil,		/* wait */
+			nil,		/* inputs */
+			nil,		/* * */
+			nil,		/* < */
+			nil,		/* ( */
+			reduce(32),		/* ), reduce: IterOperDot */
+			nil,		/* = */
+			nil,		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S148
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			nil,		/* , */
+			nil,		/* wait */
+			nil,		/* inputs */
+			reduce(30),		/* *, reduce: IterOperCross */
+			nil,		/* < */
+			nil,		/* ( */
+			reduce(30),		/* ), reduce: IterOperCross */
+			nil,		/* = */
+			nil,		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S149
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			nil,		/* , */
+			nil,		/* wait */
+			nil,		/* inputs */
+			nil,		/* * */
+			nil,		/* < */
+			nil,		/* ( */
+			nil,		/* ) */
+			shift(174),		/* = */
+			nil,		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S150
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			nil,		/* , */
+			nil,		/* wait */
+			nil,		/* inputs */
+			nil,		/* * */
+			nil,		/* < */
+			nil,		/* ( */
+			reduce(35),		/* ), reduce: IterNode */
+			nil,		/* = */
+			nil,		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S151
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			nil,		/* , */
+			nil,		/* wait */
+			nil,		/* inputs */
+			nil,		/* * */
+			nil,		/* < */
+			nil,		/* ( */
+			reduce(34),		/* ), reduce: IterOperPrefix */
+			nil,		/* = */
+			nil,		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S152
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			nil,		/* , */
+			nil,		/* wait */
+			nil,		/* inputs */
+			nil,		/* * */
+			nil,		/* < */
+			shift(67),		/* ( */
+			nil,		/* ) */
+			nil,		/* = */
+			shift(68),		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S153
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
 			reduce(43),		/* $, reduce: TypeDef */
 			nil,		/* empty */
 			reduce(43),		/* name, reduce: TypeDef */
@@ -5486,7 +5708,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S148
+	actionRow{ // S154
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -5523,7 +5745,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S149
+	actionRow{ // S155
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -5560,26 +5782,26 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S150
+	actionRow{ // S156
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			reduce(44),		/* $, reduce: IdVal */
+			reduce(45),		/* $, reduce: IdVal */
 			nil,		/* empty */
-			reduce(44),		/* name, reduce: IdVal */
+			reduce(45),		/* name, reduce: IdVal */
 			nil,		/* : */
-			reduce(44),		/* type, reduce: IdVal */
-			reduce(44),		/* sanitized, reduce: IdVal */
-			reduce(44),		/* parallel, reduce: IdVal */
-			reduce(44),		/* interpreter, reduce: IdVal */
-			reduce(44),		/* scheduler, reduce: IdVal */
-			reduce(44),		/* script, reduce: IdVal */
-			reduce(44),		/* outputs, reduce: IdVal */
-			reduce(44),		/* ,, reduce: IdVal */
-			reduce(44),		/* wait, reduce: IdVal */
-			reduce(44),		/* inputs, reduce: IdVal */
-			reduce(44),		/* *, reduce: IdVal */
-			reduce(44),		/* <, reduce: IdVal */
+			reduce(45),		/* type, reduce: IdVal */
+			reduce(45),		/* sanitized, reduce: IdVal */
+			reduce(45),		/* parallel, reduce: IdVal */
+			reduce(45),		/* interpreter, reduce: IdVal */
+			reduce(45),		/* scheduler, reduce: IdVal */
+			reduce(45),		/* script, reduce: IdVal */
+			reduce(45),		/* outputs, reduce: IdVal */
+			reduce(45),		/* ,, reduce: IdVal */
+			reduce(45),		/* wait, reduce: IdVal */
+			reduce(45),		/* inputs, reduce: IdVal */
+			reduce(45),		/* *, reduce: IdVal */
+			reduce(45),		/* <, reduce: IdVal */
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* = */
@@ -5597,14 +5819,14 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S151
+	actionRow{ // S157
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			reduce(38),		/* $, reduce: SourceDef */
 			nil,		/* empty */
 			reduce(38),		/* name, reduce: SourceDef */
-			shift(170),		/* : */
+			shift(176),		/* : */
 			reduce(38),		/* type, reduce: SourceDef */
 			reduce(38),		/* sanitized, reduce: SourceDef */
 			reduce(38),		/* parallel, reduce: SourceDef */
@@ -5634,7 +5856,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S152
+	actionRow{ // S158
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -5671,25 +5893,25 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S153
+	actionRow{ // S159
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			reduce(44),		/* $, reduce: IdVal */
+			reduce(45),		/* $, reduce: IdVal */
 			nil,		/* empty */
-			reduce(44),		/* name, reduce: IdVal */
-			reduce(44),		/* :, reduce: IdVal */
-			reduce(44),		/* type, reduce: IdVal */
-			reduce(44),		/* sanitized, reduce: IdVal */
-			reduce(44),		/* parallel, reduce: IdVal */
-			reduce(44),		/* interpreter, reduce: IdVal */
-			reduce(44),		/* scheduler, reduce: IdVal */
-			reduce(44),		/* script, reduce: IdVal */
-			reduce(44),		/* outputs, reduce: IdVal */
+			reduce(45),		/* name, reduce: IdVal */
+			reduce(45),		/* :, reduce: IdVal */
+			reduce(45),		/* type, reduce: IdVal */
+			reduce(45),		/* sanitized, reduce: IdVal */
+			reduce(45),		/* parallel, reduce: IdVal */
+			reduce(45),		/* interpreter, reduce: IdVal */
+			reduce(45),		/* scheduler, reduce: IdVal */
+			reduce(45),		/* script, reduce: IdVal */
+			reduce(45),		/* outputs, reduce: IdVal */
 			nil,		/* , */
-			reduce(44),		/* wait, reduce: IdVal */
-			reduce(44),		/* inputs, reduce: IdVal */
-			reduce(44),		/* *, reduce: IdVal */
+			reduce(45),		/* wait, reduce: IdVal */
+			reduce(45),		/* inputs, reduce: IdVal */
+			reduce(45),		/* *, reduce: IdVal */
 			nil,		/* < */
 			nil,		/* ( */
 			nil,		/* ) */
@@ -5708,7 +5930,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S154
+	actionRow{ // S160
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -5745,14 +5967,14 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S155
+	actionRow{ // S161
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			reduce(38),		/* $, reduce: SourceDef */
 			nil,		/* empty */
 			reduce(38),		/* name, reduce: SourceDef */
-			shift(171),		/* : */
+			shift(177),		/* : */
 			reduce(38),		/* type, reduce: SourceDef */
 			reduce(38),		/* sanitized, reduce: SourceDef */
 			reduce(38),		/* parallel, reduce: SourceDef */
@@ -5782,7 +6004,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S156
+	actionRow{ // S162
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -5819,24 +6041,24 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S157
+	actionRow{ // S163
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			reduce(44),		/* $, reduce: IdVal */
+			reduce(45),		/* $, reduce: IdVal */
 			nil,		/* empty */
-			reduce(44),		/* name, reduce: IdVal */
-			reduce(44),		/* :, reduce: IdVal */
-			reduce(44),		/* type, reduce: IdVal */
-			reduce(44),		/* sanitized, reduce: IdVal */
-			reduce(44),		/* parallel, reduce: IdVal */
-			reduce(44),		/* interpreter, reduce: IdVal */
-			reduce(44),		/* scheduler, reduce: IdVal */
-			reduce(44),		/* script, reduce: IdVal */
-			reduce(44),		/* outputs, reduce: IdVal */
-			reduce(44),		/* ,, reduce: IdVal */
-			reduce(44),		/* wait, reduce: IdVal */
-			reduce(44),		/* inputs, reduce: IdVal */
+			reduce(45),		/* name, reduce: IdVal */
+			reduce(45),		/* :, reduce: IdVal */
+			reduce(45),		/* type, reduce: IdVal */
+			reduce(45),		/* sanitized, reduce: IdVal */
+			reduce(45),		/* parallel, reduce: IdVal */
+			reduce(45),		/* interpreter, reduce: IdVal */
+			reduce(45),		/* scheduler, reduce: IdVal */
+			reduce(45),		/* script, reduce: IdVal */
+			reduce(45),		/* outputs, reduce: IdVal */
+			reduce(45),		/* ,, reduce: IdVal */
+			reduce(45),		/* wait, reduce: IdVal */
+			reduce(45),		/* inputs, reduce: IdVal */
 			nil,		/* * */
 			nil,		/* < */
 			nil,		/* ( */
@@ -5856,7 +6078,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S158
+	actionRow{ // S164
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -5893,14 +6115,14 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S159
+	actionRow{ // S165
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			reduce(38),		/* $, reduce: SourceDef */
 			nil,		/* empty */
 			reduce(38),		/* name, reduce: SourceDef */
-			shift(172),		/* : */
+			shift(178),		/* : */
 			reduce(38),		/* type, reduce: SourceDef */
 			reduce(38),		/* sanitized, reduce: SourceDef */
 			reduce(38),		/* parallel, reduce: SourceDef */
@@ -5930,7 +6152,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S160
+	actionRow{ // S166
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -5967,24 +6189,24 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S161
+	actionRow{ // S167
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			reduce(44),		/* $, reduce: IdVal */
+			reduce(45),		/* $, reduce: IdVal */
 			nil,		/* empty */
-			reduce(44),		/* name, reduce: IdVal */
-			reduce(44),		/* :, reduce: IdVal */
-			reduce(44),		/* type, reduce: IdVal */
-			reduce(44),		/* sanitized, reduce: IdVal */
-			reduce(44),		/* parallel, reduce: IdVal */
-			reduce(44),		/* interpreter, reduce: IdVal */
-			reduce(44),		/* scheduler, reduce: IdVal */
-			reduce(44),		/* script, reduce: IdVal */
-			reduce(44),		/* outputs, reduce: IdVal */
+			reduce(45),		/* name, reduce: IdVal */
+			reduce(45),		/* :, reduce: IdVal */
+			reduce(45),		/* type, reduce: IdVal */
+			reduce(45),		/* sanitized, reduce: IdVal */
+			reduce(45),		/* parallel, reduce: IdVal */
+			reduce(45),		/* interpreter, reduce: IdVal */
+			reduce(45),		/* scheduler, reduce: IdVal */
+			reduce(45),		/* script, reduce: IdVal */
+			reduce(45),		/* outputs, reduce: IdVal */
 			nil,		/* , */
-			reduce(44),		/* wait, reduce: IdVal */
-			reduce(44),		/* inputs, reduce: IdVal */
+			reduce(45),		/* wait, reduce: IdVal */
+			reduce(45),		/* inputs, reduce: IdVal */
 			nil,		/* * */
 			nil,		/* < */
 			nil,		/* ( */
@@ -6004,7 +6226,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S162
+	actionRow{ // S168
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -6041,228 +6263,6 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S163
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* empty */
-			nil,		/* name */
-			nil,		/* : */
-			nil,		/* type */
-			nil,		/* sanitized */
-			nil,		/* parallel */
-			nil,		/* interpreter */
-			nil,		/* scheduler */
-			nil,		/* script */
-			nil,		/* outputs */
-			nil,		/* , */
-			nil,		/* wait */
-			nil,		/* inputs */
-			nil,		/* * */
-			nil,		/* < */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* = */
-			shift(174),		/* id */
-			nil,		/* str_lit */
-			nil,		/* path */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* t */
-			nil,		/* f */
-			nil,		/* 0 */
-			nil,		/* 1 */
-			nil,		/* pos_int */
-			
-		},
-
-	},
-	actionRow{ // S164
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* empty */
-			nil,		/* name */
-			nil,		/* : */
-			nil,		/* type */
-			nil,		/* sanitized */
-			nil,		/* parallel */
-			nil,		/* interpreter */
-			nil,		/* scheduler */
-			nil,		/* script */
-			nil,		/* outputs */
-			nil,		/* , */
-			nil,		/* wait */
-			nil,		/* inputs */
-			nil,		/* * */
-			nil,		/* < */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* = */
-			shift(177),		/* id */
-			nil,		/* str_lit */
-			nil,		/* path */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* t */
-			nil,		/* f */
-			nil,		/* 0 */
-			nil,		/* 1 */
-			nil,		/* pos_int */
-			
-		},
-
-	},
-	actionRow{ // S165
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* empty */
-			nil,		/* name */
-			nil,		/* : */
-			nil,		/* type */
-			nil,		/* sanitized */
-			nil,		/* parallel */
-			nil,		/* interpreter */
-			nil,		/* scheduler */
-			nil,		/* script */
-			nil,		/* outputs */
-			nil,		/* , */
-			nil,		/* wait */
-			nil,		/* inputs */
-			nil,		/* * */
-			nil,		/* < */
-			nil,		/* ( */
-			shift(178),		/* ) */
-			nil,		/* = */
-			nil,		/* id */
-			nil,		/* str_lit */
-			nil,		/* path */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* t */
-			nil,		/* f */
-			nil,		/* 0 */
-			nil,		/* 1 */
-			nil,		/* pos_int */
-			
-		},
-
-	},
-	actionRow{ // S166
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* empty */
-			nil,		/* name */
-			nil,		/* : */
-			nil,		/* type */
-			nil,		/* sanitized */
-			nil,		/* parallel */
-			nil,		/* interpreter */
-			nil,		/* scheduler */
-			nil,		/* script */
-			nil,		/* outputs */
-			nil,		/* , */
-			nil,		/* wait */
-			nil,		/* inputs */
-			nil,		/* * */
-			nil,		/* < */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* = */
-			shift(181),		/* id */
-			nil,		/* str_lit */
-			nil,		/* path */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* t */
-			nil,		/* f */
-			nil,		/* 0 */
-			nil,		/* 1 */
-			nil,		/* pos_int */
-			
-		},
-
-	},
-	actionRow{ // S167
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* empty */
-			nil,		/* name */
-			nil,		/* : */
-			nil,		/* type */
-			nil,		/* sanitized */
-			nil,		/* parallel */
-			nil,		/* interpreter */
-			nil,		/* scheduler */
-			nil,		/* script */
-			nil,		/* outputs */
-			nil,		/* , */
-			nil,		/* wait */
-			nil,		/* inputs */
-			nil,		/* * */
-			nil,		/* < */
-			nil,		/* ( */
-			shift(182),		/* ) */
-			nil,		/* = */
-			nil,		/* id */
-			nil,		/* str_lit */
-			nil,		/* path */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* t */
-			nil,		/* f */
-			nil,		/* 0 */
-			nil,		/* 1 */
-			nil,		/* pos_int */
-			
-		},
-
-	},
-	actionRow{ // S168
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* empty */
-			nil,		/* name */
-			nil,		/* : */
-			nil,		/* type */
-			nil,		/* sanitized */
-			nil,		/* parallel */
-			nil,		/* interpreter */
-			nil,		/* scheduler */
-			nil,		/* script */
-			nil,		/* outputs */
-			nil,		/* , */
-			nil,		/* wait */
-			nil,		/* inputs */
-			nil,		/* * */
-			nil,		/* < */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* = */
-			shift(185),		/* id */
-			nil,		/* str_lit */
-			nil,		/* path */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* t */
-			nil,		/* f */
-			nil,		/* 0 */
-			nil,		/* 1 */
-			nil,		/* pos_int */
-			
-		},
-
-	},
 	actionRow{ // S169
 				canRecover: false,
 		actions: [numSymbols]action{
@@ -6284,9 +6284,9 @@ var actionTab = actionTable{
 			nil,		/* * */
 			nil,		/* < */
 			nil,		/* ( */
-			shift(186),		/* ) */
+			nil,		/* ) */
 			nil,		/* = */
-			nil,		/* id */
+			shift(180),		/* id */
 			nil,		/* str_lit */
 			nil,		/* path */
 			nil,		/* true */
@@ -6323,7 +6323,7 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* = */
-			shift(188),		/* id */
+			shift(183),		/* id */
 			nil,		/* str_lit */
 			nil,		/* path */
 			nil,		/* true */
@@ -6358,9 +6358,9 @@ var actionTab = actionTable{
 			nil,		/* * */
 			nil,		/* < */
 			nil,		/* ( */
-			nil,		/* ) */
+			shift(184),		/* ) */
 			nil,		/* = */
-			shift(58),		/* id */
+			nil,		/* id */
 			nil,		/* str_lit */
 			nil,		/* path */
 			nil,		/* true */
@@ -6397,7 +6397,7 @@ var actionTab = actionTable{
 			nil,		/* ( */
 			nil,		/* ) */
 			nil,		/* = */
-			shift(33),		/* id */
+			shift(187),		/* id */
 			nil,		/* str_lit */
 			nil,		/* path */
 			nil,		/* true */
@@ -6412,6 +6412,228 @@ var actionTab = actionTable{
 
 	},
 	actionRow{ // S173
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			nil,		/* , */
+			nil,		/* wait */
+			nil,		/* inputs */
+			nil,		/* * */
+			nil,		/* < */
+			nil,		/* ( */
+			shift(188),		/* ) */
+			nil,		/* = */
+			nil,		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S174
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			nil,		/* , */
+			nil,		/* wait */
+			nil,		/* inputs */
+			nil,		/* * */
+			nil,		/* < */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* = */
+			shift(191),		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S175
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			nil,		/* , */
+			nil,		/* wait */
+			nil,		/* inputs */
+			nil,		/* * */
+			nil,		/* < */
+			nil,		/* ( */
+			shift(192),		/* ) */
+			nil,		/* = */
+			nil,		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S176
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			nil,		/* , */
+			nil,		/* wait */
+			nil,		/* inputs */
+			nil,		/* * */
+			nil,		/* < */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* = */
+			shift(194),		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S177
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			nil,		/* , */
+			nil,		/* wait */
+			nil,		/* inputs */
+			nil,		/* * */
+			nil,		/* < */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* = */
+			shift(58),		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S178
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			nil,		/* , */
+			nil,		/* wait */
+			nil,		/* inputs */
+			nil,		/* * */
+			nil,		/* < */
+			nil,		/* ( */
+			nil,		/* ) */
+			nil,		/* = */
+			shift(33),		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S179
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -6448,7 +6670,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S174
+	actionRow{ // S180
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -6463,13 +6685,13 @@ var actionTab = actionTable{
 			nil,		/* scheduler */
 			nil,		/* script */
 			nil,		/* outputs */
-			reduce(44),		/* ,, reduce: IdVal */
+			reduce(45),		/* ,, reduce: IdVal */
 			nil,		/* wait */
 			nil,		/* inputs */
-			reduce(44),		/* *, reduce: IdVal */
-			reduce(44),		/* <, reduce: IdVal */
+			reduce(45),		/* *, reduce: IdVal */
+			reduce(45),		/* <, reduce: IdVal */
 			nil,		/* ( */
-			reduce(44),		/* ), reduce: IdVal */
+			reduce(45),		/* ), reduce: IdVal */
 			nil,		/* = */
 			nil,		/* id */
 			nil,		/* str_lit */
@@ -6485,14 +6707,14 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S175
+	actionRow{ // S181
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
 			nil,		/* empty */
 			nil,		/* name */
-			shift(191),		/* : */
+			shift(197),		/* : */
 			nil,		/* type */
 			nil,		/* sanitized */
 			nil,		/* parallel */
@@ -6522,7 +6744,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S176
+	actionRow{ // S182
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -6559,14 +6781,14 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S177
+	actionRow{ // S183
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
 			nil,		/* empty */
 			nil,		/* name */
-			reduce(44),		/* :, reduce: IdVal */
+			reduce(45),		/* :, reduce: IdVal */
 			nil,		/* type */
 			nil,		/* sanitized */
 			nil,		/* parallel */
@@ -6577,10 +6799,10 @@ var actionTab = actionTable{
 			nil,		/* , */
 			nil,		/* wait */
 			nil,		/* inputs */
-			reduce(44),		/* *, reduce: IdVal */
+			reduce(45),		/* *, reduce: IdVal */
 			nil,		/* < */
 			nil,		/* ( */
-			reduce(44),		/* ), reduce: IdVal */
+			reduce(45),		/* ), reduce: IdVal */
 			nil,		/* = */
 			nil,		/* id */
 			nil,		/* str_lit */
@@ -6596,7 +6818,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S178
+	actionRow{ // S184
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -6633,14 +6855,14 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S179
+	actionRow{ // S185
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
 			nil,		/* empty */
 			nil,		/* name */
-			shift(192),		/* : */
+			shift(198),		/* : */
 			nil,		/* type */
 			nil,		/* sanitized */
 			nil,		/* parallel */
@@ -6670,7 +6892,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S180
+	actionRow{ // S186
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -6707,14 +6929,14 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S181
+	actionRow{ // S187
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
 			nil,		/* empty */
 			nil,		/* name */
-			reduce(44),		/* :, reduce: IdVal */
+			reduce(45),		/* :, reduce: IdVal */
 			nil,		/* type */
 			nil,		/* sanitized */
 			nil,		/* parallel */
@@ -6722,13 +6944,13 @@ var actionTab = actionTable{
 			nil,		/* scheduler */
 			nil,		/* script */
 			nil,		/* outputs */
-			reduce(44),		/* ,, reduce: IdVal */
+			reduce(45),		/* ,, reduce: IdVal */
 			nil,		/* wait */
 			nil,		/* inputs */
 			nil,		/* * */
 			nil,		/* < */
 			nil,		/* ( */
-			reduce(44),		/* ), reduce: IdVal */
+			reduce(45),		/* ), reduce: IdVal */
 			nil,		/* = */
 			nil,		/* id */
 			nil,		/* str_lit */
@@ -6744,7 +6966,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S182
+	actionRow{ // S188
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -6781,14 +7003,14 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S183
+	actionRow{ // S189
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
 			nil,		/* empty */
 			nil,		/* name */
-			shift(193),		/* : */
+			shift(199),		/* : */
 			nil,		/* type */
 			nil,		/* sanitized */
 			nil,		/* parallel */
@@ -6818,7 +7040,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S184
+	actionRow{ // S190
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -6855,14 +7077,14 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S185
+	actionRow{ // S191
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
 			nil,		/* $ */
 			nil,		/* empty */
 			nil,		/* name */
-			reduce(44),		/* :, reduce: IdVal */
+			reduce(45),		/* :, reduce: IdVal */
 			nil,		/* type */
 			nil,		/* sanitized */
 			nil,		/* parallel */
@@ -6876,7 +7098,7 @@ var actionTab = actionTable{
 			nil,		/* * */
 			nil,		/* < */
 			nil,		/* ( */
-			reduce(44),		/* ), reduce: IdVal */
+			reduce(45),		/* ), reduce: IdVal */
 			nil,		/* = */
 			nil,		/* id */
 			nil,		/* str_lit */
@@ -6892,7 +7114,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S186
+	actionRow{ // S192
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -6929,7 +7151,7 @@ var actionTab = actionTable{
 		},
 
 	},
-	actionRow{ // S187
+	actionRow{ // S193
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
@@ -6953,228 +7175,6 @@ var actionTab = actionTable{
 			nil,		/* ) */
 			nil,		/* = */
 			nil,		/* id */
-			nil,		/* str_lit */
-			nil,		/* path */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* t */
-			nil,		/* f */
-			nil,		/* 0 */
-			nil,		/* 1 */
-			nil,		/* pos_int */
-			
-		},
-
-	},
-	actionRow{ // S188
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			reduce(44),		/* $, reduce: IdVal */
-			nil,		/* empty */
-			reduce(44),		/* name, reduce: IdVal */
-			nil,		/* : */
-			reduce(44),		/* type, reduce: IdVal */
-			reduce(44),		/* sanitized, reduce: IdVal */
-			reduce(44),		/* parallel, reduce: IdVal */
-			reduce(44),		/* interpreter, reduce: IdVal */
-			reduce(44),		/* scheduler, reduce: IdVal */
-			reduce(44),		/* script, reduce: IdVal */
-			reduce(44),		/* outputs, reduce: IdVal */
-			nil,		/* , */
-			reduce(44),		/* wait, reduce: IdVal */
-			reduce(44),		/* inputs, reduce: IdVal */
-			reduce(44),		/* *, reduce: IdVal */
-			nil,		/* < */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* = */
-			nil,		/* id */
-			nil,		/* str_lit */
-			nil,		/* path */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* t */
-			nil,		/* f */
-			nil,		/* 0 */
-			nil,		/* 1 */
-			nil,		/* pos_int */
-			
-		},
-
-	},
-	actionRow{ // S189
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			reduce(39),		/* $, reduce: SourceDef */
-			nil,		/* empty */
-			reduce(39),		/* name, reduce: SourceDef */
-			nil,		/* : */
-			reduce(39),		/* type, reduce: SourceDef */
-			reduce(39),		/* sanitized, reduce: SourceDef */
-			reduce(39),		/* parallel, reduce: SourceDef */
-			reduce(39),		/* interpreter, reduce: SourceDef */
-			reduce(39),		/* scheduler, reduce: SourceDef */
-			reduce(39),		/* script, reduce: SourceDef */
-			reduce(39),		/* outputs, reduce: SourceDef */
-			reduce(39),		/* ,, reduce: SourceDef */
-			reduce(39),		/* wait, reduce: SourceDef */
-			reduce(39),		/* inputs, reduce: SourceDef */
-			nil,		/* * */
-			nil,		/* < */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* = */
-			nil,		/* id */
-			nil,		/* str_lit */
-			nil,		/* path */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* t */
-			nil,		/* f */
-			nil,		/* 0 */
-			nil,		/* 1 */
-			nil,		/* pos_int */
-			
-		},
-
-	},
-	actionRow{ // S190
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			reduce(39),		/* $, reduce: SourceDef */
-			nil,		/* empty */
-			reduce(39),		/* name, reduce: SourceDef */
-			nil,		/* : */
-			reduce(39),		/* type, reduce: SourceDef */
-			reduce(39),		/* sanitized, reduce: SourceDef */
-			reduce(39),		/* parallel, reduce: SourceDef */
-			reduce(39),		/* interpreter, reduce: SourceDef */
-			reduce(39),		/* scheduler, reduce: SourceDef */
-			reduce(39),		/* script, reduce: SourceDef */
-			reduce(39),		/* outputs, reduce: SourceDef */
-			nil,		/* , */
-			reduce(39),		/* wait, reduce: SourceDef */
-			reduce(39),		/* inputs, reduce: SourceDef */
-			nil,		/* * */
-			nil,		/* < */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* = */
-			nil,		/* id */
-			nil,		/* str_lit */
-			nil,		/* path */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* t */
-			nil,		/* f */
-			nil,		/* 0 */
-			nil,		/* 1 */
-			nil,		/* pos_int */
-			
-		},
-
-	},
-	actionRow{ // S191
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* empty */
-			nil,		/* name */
-			nil,		/* : */
-			nil,		/* type */
-			nil,		/* sanitized */
-			nil,		/* parallel */
-			nil,		/* interpreter */
-			nil,		/* scheduler */
-			nil,		/* script */
-			nil,		/* outputs */
-			nil,		/* , */
-			nil,		/* wait */
-			nil,		/* inputs */
-			nil,		/* * */
-			nil,		/* < */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* = */
-			shift(195),		/* id */
-			nil,		/* str_lit */
-			nil,		/* path */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* t */
-			nil,		/* f */
-			nil,		/* 0 */
-			nil,		/* 1 */
-			nil,		/* pos_int */
-			
-		},
-
-	},
-	actionRow{ // S192
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* empty */
-			nil,		/* name */
-			nil,		/* : */
-			nil,		/* type */
-			nil,		/* sanitized */
-			nil,		/* parallel */
-			nil,		/* interpreter */
-			nil,		/* scheduler */
-			nil,		/* script */
-			nil,		/* outputs */
-			nil,		/* , */
-			nil,		/* wait */
-			nil,		/* inputs */
-			nil,		/* * */
-			nil,		/* < */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* = */
-			shift(197),		/* id */
-			nil,		/* str_lit */
-			nil,		/* path */
-			nil,		/* true */
-			nil,		/* false */
-			nil,		/* t */
-			nil,		/* f */
-			nil,		/* 0 */
-			nil,		/* 1 */
-			nil,		/* pos_int */
-			
-		},
-
-	},
-	actionRow{ // S193
-				canRecover: false,
-		actions: [numSymbols]action{
-			nil,		/* INVALID */
-			nil,		/* $ */
-			nil,		/* empty */
-			nil,		/* name */
-			nil,		/* : */
-			nil,		/* type */
-			nil,		/* sanitized */
-			nil,		/* parallel */
-			nil,		/* interpreter */
-			nil,		/* scheduler */
-			nil,		/* script */
-			nil,		/* outputs */
-			nil,		/* , */
-			nil,		/* wait */
-			nil,		/* inputs */
-			nil,		/* * */
-			nil,		/* < */
-			nil,		/* ( */
-			nil,		/* ) */
-			nil,		/* = */
-			shift(199),		/* id */
 			nil,		/* str_lit */
 			nil,		/* path */
 			nil,		/* true */
@@ -7192,24 +7192,24 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			nil,		/* $ */
+			reduce(45),		/* $, reduce: IdVal */
 			nil,		/* empty */
-			nil,		/* name */
+			reduce(45),		/* name, reduce: IdVal */
 			nil,		/* : */
-			nil,		/* type */
-			nil,		/* sanitized */
-			nil,		/* parallel */
-			nil,		/* interpreter */
-			nil,		/* scheduler */
-			nil,		/* script */
-			nil,		/* outputs */
+			reduce(45),		/* type, reduce: IdVal */
+			reduce(45),		/* sanitized, reduce: IdVal */
+			reduce(45),		/* parallel, reduce: IdVal */
+			reduce(45),		/* interpreter, reduce: IdVal */
+			reduce(45),		/* scheduler, reduce: IdVal */
+			reduce(45),		/* script, reduce: IdVal */
+			reduce(45),		/* outputs, reduce: IdVal */
 			nil,		/* , */
-			nil,		/* wait */
-			nil,		/* inputs */
-			reduce(39),		/* *, reduce: SourceDef */
+			reduce(45),		/* wait, reduce: IdVal */
+			reduce(45),		/* inputs, reduce: IdVal */
+			reduce(45),		/* *, reduce: IdVal */
 			nil,		/* < */
 			nil,		/* ( */
-			reduce(39),		/* ), reduce: SourceDef */
+			nil,		/* ) */
 			nil,		/* = */
 			nil,		/* id */
 			nil,		/* str_lit */
@@ -7229,24 +7229,24 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			nil,		/* $ */
+			reduce(39),		/* $, reduce: SourceDef */
 			nil,		/* empty */
-			nil,		/* name */
+			reduce(39),		/* name, reduce: SourceDef */
 			nil,		/* : */
-			nil,		/* type */
-			nil,		/* sanitized */
-			nil,		/* parallel */
-			nil,		/* interpreter */
-			nil,		/* scheduler */
-			nil,		/* script */
-			nil,		/* outputs */
-			nil,		/* , */
-			nil,		/* wait */
-			nil,		/* inputs */
-			reduce(44),		/* *, reduce: IdVal */
+			reduce(39),		/* type, reduce: SourceDef */
+			reduce(39),		/* sanitized, reduce: SourceDef */
+			reduce(39),		/* parallel, reduce: SourceDef */
+			reduce(39),		/* interpreter, reduce: SourceDef */
+			reduce(39),		/* scheduler, reduce: SourceDef */
+			reduce(39),		/* script, reduce: SourceDef */
+			reduce(39),		/* outputs, reduce: SourceDef */
+			reduce(39),		/* ,, reduce: SourceDef */
+			reduce(39),		/* wait, reduce: SourceDef */
+			reduce(39),		/* inputs, reduce: SourceDef */
+			nil,		/* * */
 			nil,		/* < */
 			nil,		/* ( */
-			reduce(44),		/* ), reduce: IdVal */
+			nil,		/* ) */
 			nil,		/* = */
 			nil,		/* id */
 			nil,		/* str_lit */
@@ -7266,24 +7266,24 @@ var actionTab = actionTable{
 				canRecover: false,
 		actions: [numSymbols]action{
 			nil,		/* INVALID */
-			nil,		/* $ */
+			reduce(39),		/* $, reduce: SourceDef */
 			nil,		/* empty */
-			nil,		/* name */
+			reduce(39),		/* name, reduce: SourceDef */
 			nil,		/* : */
-			nil,		/* type */
-			nil,		/* sanitized */
-			nil,		/* parallel */
-			nil,		/* interpreter */
-			nil,		/* scheduler */
-			nil,		/* script */
-			nil,		/* outputs */
-			reduce(39),		/* ,, reduce: SourceDef */
-			nil,		/* wait */
-			nil,		/* inputs */
+			reduce(39),		/* type, reduce: SourceDef */
+			reduce(39),		/* sanitized, reduce: SourceDef */
+			reduce(39),		/* parallel, reduce: SourceDef */
+			reduce(39),		/* interpreter, reduce: SourceDef */
+			reduce(39),		/* scheduler, reduce: SourceDef */
+			reduce(39),		/* script, reduce: SourceDef */
+			reduce(39),		/* outputs, reduce: SourceDef */
+			nil,		/* , */
+			reduce(39),		/* wait, reduce: SourceDef */
+			reduce(39),		/* inputs, reduce: SourceDef */
 			nil,		/* * */
 			nil,		/* < */
 			nil,		/* ( */
-			reduce(39),		/* ), reduce: SourceDef */
+			nil,		/* ) */
 			nil,		/* = */
 			nil,		/* id */
 			nil,		/* str_lit */
@@ -7314,15 +7314,15 @@ var actionTab = actionTable{
 			nil,		/* scheduler */
 			nil,		/* script */
 			nil,		/* outputs */
-			reduce(44),		/* ,, reduce: IdVal */
+			nil,		/* , */
 			nil,		/* wait */
 			nil,		/* inputs */
 			nil,		/* * */
 			nil,		/* < */
 			nil,		/* ( */
-			reduce(44),		/* ), reduce: IdVal */
+			nil,		/* ) */
 			nil,		/* = */
-			nil,		/* id */
+			shift(201),		/* id */
 			nil,		/* str_lit */
 			nil,		/* path */
 			nil,		/* true */
@@ -7357,9 +7357,9 @@ var actionTab = actionTable{
 			nil,		/* * */
 			nil,		/* < */
 			nil,		/* ( */
-			reduce(39),		/* ), reduce: SourceDef */
+			nil,		/* ) */
 			nil,		/* = */
-			nil,		/* id */
+			shift(203),		/* id */
 			nil,		/* str_lit */
 			nil,		/* path */
 			nil,		/* true */
@@ -7394,7 +7394,229 @@ var actionTab = actionTable{
 			nil,		/* * */
 			nil,		/* < */
 			nil,		/* ( */
-			reduce(44),		/* ), reduce: IdVal */
+			nil,		/* ) */
+			nil,		/* = */
+			shift(205),		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S200
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			nil,		/* , */
+			nil,		/* wait */
+			nil,		/* inputs */
+			reduce(39),		/* *, reduce: SourceDef */
+			nil,		/* < */
+			nil,		/* ( */
+			reduce(39),		/* ), reduce: SourceDef */
+			nil,		/* = */
+			nil,		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S201
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			nil,		/* , */
+			nil,		/* wait */
+			nil,		/* inputs */
+			reduce(45),		/* *, reduce: IdVal */
+			nil,		/* < */
+			nil,		/* ( */
+			reduce(45),		/* ), reduce: IdVal */
+			nil,		/* = */
+			nil,		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S202
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			reduce(39),		/* ,, reduce: SourceDef */
+			nil,		/* wait */
+			nil,		/* inputs */
+			nil,		/* * */
+			nil,		/* < */
+			nil,		/* ( */
+			reduce(39),		/* ), reduce: SourceDef */
+			nil,		/* = */
+			nil,		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S203
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			reduce(45),		/* ,, reduce: IdVal */
+			nil,		/* wait */
+			nil,		/* inputs */
+			nil,		/* * */
+			nil,		/* < */
+			nil,		/* ( */
+			reduce(45),		/* ), reduce: IdVal */
+			nil,		/* = */
+			nil,		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S204
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			nil,		/* , */
+			nil,		/* wait */
+			nil,		/* inputs */
+			nil,		/* * */
+			nil,		/* < */
+			nil,		/* ( */
+			reduce(39),		/* ), reduce: SourceDef */
+			nil,		/* = */
+			nil,		/* id */
+			nil,		/* str_lit */
+			nil,		/* path */
+			nil,		/* true */
+			nil,		/* false */
+			nil,		/* t */
+			nil,		/* f */
+			nil,		/* 0 */
+			nil,		/* 1 */
+			nil,		/* pos_int */
+			
+		},
+
+	},
+	actionRow{ // S205
+				canRecover: false,
+		actions: [numSymbols]action{
+			nil,		/* INVALID */
+			nil,		/* $ */
+			nil,		/* empty */
+			nil,		/* name */
+			nil,		/* : */
+			nil,		/* type */
+			nil,		/* sanitized */
+			nil,		/* parallel */
+			nil,		/* interpreter */
+			nil,		/* scheduler */
+			nil,		/* script */
+			nil,		/* outputs */
+			nil,		/* , */
+			nil,		/* wait */
+			nil,		/* inputs */
+			nil,		/* * */
+			nil,		/* < */
+			nil,		/* ( */
+			reduce(45),		/* ), reduce: IdVal */
 			nil,		/* = */
 			nil,		/* id */
 			nil,		/* str_lit */

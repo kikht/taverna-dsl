@@ -69,6 +69,7 @@ PortDef : IdVal         << ast.NewPortDef($0, nil) >>
 ;
 TypeDef : IdVal                << ast.NewTypeDef($0, 0) >>
         | IdVal "(" IntVal ")" << ast.NewTypeDef($0, $2) >>
+        | "(" IntVal ")"       << ast.NewTypeDef("", $1) >>
 ;
 IdVal     : id                    << ast.StrVal($0) >> ; 
 ScriptVal : str_lit               << ast.StrLitVal($0) >> 
