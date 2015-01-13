@@ -3,7 +3,7 @@ package lexer
 
 import(
 	"fmt"
-	"gitlab.ict.sbras.ru/taverna/taverna-dsl/token"
+	"gitlab.ict.sbras.ru/taverna/dsl/token"
 )
 
 type ActionTable [NumStates] ActionRow

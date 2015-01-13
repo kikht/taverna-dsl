@@ -4,11 +4,11 @@ package lexer
 import (
 	
 	// "fmt"
-	// "gitlab.ict.sbras.ru/taverna/taverna-dsl/util"
+	// "gitlab.ict.sbras.ru/taverna/dsl/util"
 	
 	"io/ioutil"
 	"unicode/utf8"
-	"gitlab.ict.sbras.ru/taverna/taverna-dsl/token"
+	"gitlab.ict.sbras.ru/taverna/dsl/token"
 )
 
 const(

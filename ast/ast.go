@@ -2,7 +2,7 @@ package ast
 
 import (
 	"errors"
-	"gitlab.ict.sbras.ru/taverna/taverna-dsl/token"
+	"gitlab.ict.sbras.ru/taverna/dsl/token"
 	"strconv"
 )
 

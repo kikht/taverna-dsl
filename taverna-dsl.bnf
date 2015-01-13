@@ -10,7 +10,7 @@ path : {_pathchar} ;
 
 !whitespace : ' ' | '\t' | '\n' | '\r' ;
 
-<<import ( "gitlab.ict.sbras.ru/taverna/taverna-dsl/ast" )>>
+<<import ( "gitlab.ict.sbras.ru/taverna/dsl/ast" )>>
 
 Processor : empty                     
           | Processor NameStmt        << ast.SetName($0, $1) >>

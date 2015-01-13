@@ -5,8 +5,8 @@ import(
 	"bytes"
 	"fmt"
 	"errors"
-	parseError "gitlab.ict.sbras.ru/taverna/taverna-dsl/errors"
-	"gitlab.ict.sbras.ru/taverna/taverna-dsl/token"
+	parseError "gitlab.ict.sbras.ru/taverna/dsl/errors"
+	"gitlab.ict.sbras.ru/taverna/dsl/token"
 )
 
 const (

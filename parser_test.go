@@ -2,9 +2,9 @@ package main
 
 import (
 	"github.com/gobs/pretty"
-	"gitlab.ict.sbras.ru/taverna/taverna-dsl/ast"
-	"gitlab.ict.sbras.ru/taverna/taverna-dsl/lexer"
-	"gitlab.ict.sbras.ru/taverna/taverna-dsl/parser"
+	"gitlab.ict.sbras.ru/taverna/dsl/ast"
+	"gitlab.ict.sbras.ru/taverna/dsl/lexer"
+	"gitlab.ict.sbras.ru/taverna/dsl/parser"
 	"testing"
 )
 

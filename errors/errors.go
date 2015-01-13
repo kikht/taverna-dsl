@@ -4,7 +4,7 @@ package errors
 import(
 	"bytes"
 	"fmt"
-	"gitlab.ict.sbras.ru/taverna/taverna-dsl/token"
+	"gitlab.ict.sbras.ru/taverna/dsl/token"
 )
 
 type ErrorSymbol interface {

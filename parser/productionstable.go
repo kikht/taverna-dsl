@@ -1,7 +1,7 @@
 
 package parser
 
-import ( "gitlab.ict.sbras.ru/taverna/taverna-dsl/ast" )
+import ( "gitlab.ict.sbras.ru/taverna/dsl/ast" )
 
 type (
 	//TODO: change type and variable names to be consistent with other tables
