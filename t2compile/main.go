@@ -78,7 +78,7 @@ func newDispatchStack(parallel int, sanitized bool) t2.DispatchStack {
 				Encoding:   "xstream",
 				NullConfig: &t2.EmptyActivityConfig{}}}}
 	if sanitized {
-		res = append([]t2.DispatchLayer{t2.DispatchLayer{
+		sanitizer := t2.DispatchLayer{
 			ClassRef: t2.ClassRef{
 				Group:    "ru.nsc.ict.taverna",
 				Artifact: "modis-activity-core",
@@ -86,7 +86,10 @@ func newDispatchStack(parallel int, sanitized bool) t2.DispatchStack {
 				Class:    "ru.nsc.ict.taverna.dispatch.ListSanitizer"},
 			ConfigBean: t2.ConfigBean{
 				Encoding:   "xstream",
-				NullConfig: &t2.EmptyActivityConfig{}}}}, res...)
+				NullConfig: &t2.EmptyActivityConfig{}}}
+		res = append(res, t2.DispatchLayer{})
+		copy(res[2:], res[1:])
+		res[1] = sanitizer
 	}
 	return res
 }
