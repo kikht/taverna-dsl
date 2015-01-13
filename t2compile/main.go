@@ -368,12 +368,14 @@ func run() error {
 				EmptyActivityConfig: &t2.EmptyActivityConfig{}}},
 		DispatchStack: newDispatchStack(1, false)}
 
+	uuid := uuid.NewV4().String()
+	uuid = uuid[1:len(uuid)-1]
 	workflow := t2.Workflow{
 		XMLNs:      "http://taverna.sf.net/2008/xml/t2flow",
 		Version:    1,
 		ProducedBy: "t2Compile",
 		Dataflow: t2.Dataflow{
-			Id:         uuid.NewV4().String(),
+			Id:         uuid,
 			Role:       "top",
 			Name:       inputDir,
 			Processors: []t2.Processor{waitForCopy}}}
