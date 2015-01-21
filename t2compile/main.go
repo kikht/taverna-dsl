@@ -12,6 +12,7 @@ import (
 	"log"
 	"os"
 	"encoding/xml"
+	"sort"
 	"strings"
 )
 
@@ -396,11 +397,16 @@ func run() error {
 		}
 	}
 	
-	workflow.Dataflow.InputPorts = make([]t2.Port, len(workflowInputs))
-	i := 0
-	for name, depth := range workflowInputs {
-		workflow.Dataflow.InputPorts[i] = t2.Port{name, depth, depth}
-		i++
+	inputNames := make([]string, 0, len(workflowInputs))
+	for name := range workflowInputs {
+		inputNames = append(inputNames, name)
+	}
+	sort.Strings(inputNames)
+	workflow.Dataflow.InputPorts = make([]t2.Port, 0, len(workflowInputs))
+	for _, name := range inputNames {
+		depth := workflowInputs[name]
+		workflow.Dataflow.InputPorts = append(workflow.Dataflow.InputPorts,
+			t2.Port{name, depth, depth})
 	}
 
 	encoder := xml.NewEncoder(os.Stdout)
